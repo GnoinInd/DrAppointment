@@ -21,6 +21,8 @@ class PaymentDetails extends Component{
         // let obj = {...s1.selectData,...s1.paymentForm};
         if(this.isValid(errors)){
             console.log(s1.paymentForm);
+            alert("Payment Successfully!")
+            this.props.history.push("/")
             // this.postData("/addpatient",obj);
             // this.props.history.push({pathname:"/mobileverify",state:obj});
         }

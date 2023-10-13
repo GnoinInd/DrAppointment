@@ -1,10 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 class SignIn extends Component{
-    state={
-
-    }
-
+    state={  }
 
     render(){
         return(
@@ -32,10 +29,7 @@ class SignIn extends Component{
                         <div className="col-6 text-end"><img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/footer/images/downloadApple.svg" width="90%"/></div>
 
                     </div>
-
                 </div>
-                
-
             </div>
         )
     }

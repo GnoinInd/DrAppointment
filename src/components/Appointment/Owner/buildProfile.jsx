@@ -11,8 +11,7 @@ class BuildProfile extends Component{
             <div className="" style={{background:"rgb(230, 230, 230)"}}>
                 <div className="container vhsda2 py-3">
                     <h4 className="text-center text-primary" >Build Your Hospital Profile</h4>
-                    <div className="d-flex py-4" style={{margin:"0 auto"}}> 
-                        
+                    <div className="d-flex py-4"> 
                         <div className="arrowc4">
                             <div className="lineW3"></div>
                             <div className="cdsWq3 khcdx1">Build Profile</div>
@@ -29,7 +28,7 @@ class BuildProfile extends Component{
                             <div className="cdsWqs3 ">Add Doctor</div>
                         </div>
                     </div>
-                    <div class="row pt-5">
+                    <div className="row pt-5">
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Hospital Name:</label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
@@ -53,7 +52,7 @@ class BuildProfile extends Component{
                             </select>
                         </div>
                     </div>
-                    <div class="row kjhds3">
+                    <div className="row kjhds3">
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Hospital Area:</label>
                             <select className="form-select " name="city" value="" onChange={this.handleChange}>
@@ -72,7 +71,7 @@ class BuildProfile extends Component{
                             <input type="text" className="form-control w-50" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                     </div>
-                    <div class="row kjhds3">
+                    <div className="row kjhds3">
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Phone No.:</label>
                             <input type="text" className="form-control w-75" name="" value="" placeholder="" onChange={this.handleChange} />
@@ -86,7 +85,7 @@ class BuildProfile extends Component{
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                     </div>
-                    <div class="row kjhds3">
+                    <div className="row kjhds3">
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Fax No.:</label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
@@ -101,11 +100,9 @@ class BuildProfile extends Component{
                         </div>
                     </div>
                     <div className="text-center mt-4">
-                        <button className="btn btn-primary">Register Hospital</button>
+                    <Link className="btn btn-primary" to="/mobileVry">Register Hospital</Link>
                     </div>
                 </div>
-                
-
             </div>
         )
     }

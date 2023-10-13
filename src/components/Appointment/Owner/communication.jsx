@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
-class AddHospital extends Component{
+class Communication extends Component{
     state={
 
     }
@@ -9,83 +9,65 @@ class AddHospital extends Component{
     render(){
         return(
             <div className="" style={{background:"rgb(230, 230, 230)"}}>
-
-                <div className="container vhsda2 py-3">
-                    <h4 className="text-center text-primary" >Build Your Hospital Profile</h4>
-                    <div className="d-flex py-4" style={{margin:"0 auto"}}> 
-                        
-                        <div className="arrowc4">
-                            <div className="lineW3 lineQ1"></div>
-                            <div className="cdsWq3 khcdx1">Build Profile</div>
-                        </div>
-                        <div className="arrowc4">
-                            <div className="lineW3"></div>
-                            <div className="cdsWq3 khcdx1">Hospital Details</div>
-                        </div>
-                        <div className="arrowd3">
-                            <div className="lineW3"></div>
-                            <div className="cdsWq3">Add Specialist</div>
-                        </div>
-                        <div className="circled3">
-                            <div className="cdsWqs3 ">Add Doctor</div>
-                        </div>
-                    </div>
-                    <div class="row pt-5">
+                <div className="container py-3 vhsda2">
+                    <h3 className="" >Communication Details</h3>
+                    
+                    <div className="row pt-3">
                         <div className="form-group col-lg-4 col-md-6 col-12">
-                            <label>Hospital Type</label>
+                            <label>Country Code:</label>
+                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                                <option disabled value="" >Choose</option>
+                            {/* {cities.map((s1,index)=>(
+                                <option key={index}>{s1.name}</option>
+                            ))} */} 
+                            </select>
+                        </div>
+                        <div className="form-group col-lg-4 col-md-6 col-12">
+                            <label>Mobile Phone Number<span className="text-danger"> *</span></label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
-                            <label>Traded As</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
-                        </div>
-                        <div className="form-group col-lg-4 col-md-6 col-12">
-                            <label>Isln</label>
+                            <label>Home Phone Number<span className="text-danger"> *</span></label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                     </div>
-                    <div class="row kjhds3">
-                    <div className="form-group col-lg-4 col-md-6 col-12">
-                            <label>Industry</label>
+                    <div className="row kjhds3">
+                        <div className="form-group col-lg-4 col-md-6 col-12">
+                            <label>Work Phone Number<span className="text-danger"> *</span></label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
-                            <label>Founded</label>
+                            <label>Emergency Phone Number</label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
-                            <label>Operating_income</label>
+                            <label>Voip</label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                     </div>
-                    <div class="row kjhds3">
-                    <div className="form-group col-lg-4 col-md-6 col-12">
-                            <label>Founders</label>
+                    <div className="row kjhds3">
+                        <div className="form-group col-lg-4 col-md-6 col-12">
+                            <label>Gmail</label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
-                            <label>Headquarters</label>
+                            <label>Yahoo mail</label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
-                            <label>Area Served</label>
+                            <label>Hotmail</label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
-                        
                     </div>
-                    <div class="row kjhds3">
+                    <div className="row kjhds3">
                         <div className="form-group col-lg-4 col-md-6 col-12">
-                            <label>Revenue</label>
+                            <label>Other mail Id</label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
-                        <div className="form-group col-lg-4 col-md-6 col-12">
-                            <label>Website</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
-                        </div>
-                        
                     </div>
-                    <div className="text-center mt-4">
-                        <button className="btn btn-primary px-5">Save</button>
+                    <div className="text-end mt-4 border-top py-3" >
+                        <button className="btn btn-primary btn-sm mx-2 px-3">Save</button>
+                        <button className="btn btn-light btn-sm mx-2 px-3 ">Close</button>
                     </div>
                 </div>
                 
@@ -95,4 +77,4 @@ class AddHospital extends Component{
     }
 
 }
-export default AddHospital;
+export default Communication;

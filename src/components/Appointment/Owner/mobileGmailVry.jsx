@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
-class MobileVerify extends Component{
+class MobileGmailVry extends Component{
     state={
         mobileForm:{mobileNo:""},errors:{},selectData:this.props.location.state
     }
@@ -63,20 +63,26 @@ class MobileVerify extends Component{
                     <div className="px-4 py-3">
                         <h5 className="text-primary">Mobile Verify</h5>
                         <div>
-                            <img width="100%" src="https://imageupload.io/ib/UxMvi6m2zq3aKAA_1696845702.png" />
+                            <img width="90%" src="https://imageupload.io/ib/UxMvi6m2zq3aKAA_1696845702.png" />
                         </div>
                         <div className="form-group">
-                            <label>Mobile No.</label>
+                            <label className="fw-bold">Verify Mobile</label>
                             <input type="text" className="form-control" name="mobileNo" onChange={this.handleChange} onBlur={this.handleValidate}/>
                         </div>
+                        <div className="bg-primary py-2 text-center rounded mb-5 text-white" onClick={()=>this.handleSubmit()} style={{cursor:"pointer",fontSize:"14px"}}>
+                            Verify Mobile
+                        </div>
+                        
                         <div className="form-group">
-                            <label>Email ID:</label>
+                            <label className="fw-bold">Verify Email</label>
                             <input type="text" className="form-control"  placeholder=""/>
                             <div className="text-primary text-end"></div>
                         </div> 
-                        <div className="mt-5 mb-3 text-center" >
-                            <button className="btn btn-primary btn-sm px-5" onClick={()=>this.handleSubmit()}>Submit OTP</button>
-                        </div>   
+                        <Link to="/addHospital">
+                            <div className="bg-primary py-2 text-center rounded mb-5 text-white" onClick={()=>this.handleSubmit()} style={{cursor:"pointer",fontSize:"14px"}}>
+                                Verify Email
+                            </div>
+                        </Link>
                     </div>
                  
                 </div>
@@ -85,4 +91,4 @@ class MobileVerify extends Component{
     }
 
 }
-export default MobileVerify;
+export default MobileGmailVry;

@@ -1,26 +1,19 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
-import ImgLogo from "../admin/imgMenu.png"
+import ImgLogo from "../imgMenu.png"
 class Dashboard extends Component{
     state={
         menuList:[
-            // {name:"Employee",option:["My Profile", "Change Password", "My In Out", "Employee Directory", "Weekoff Request"]},
-            // {name:"Leave",option:[]},
-            // {name:"Claim",option:[]},
-            // {name:"Travel Details",option:[]},
-            // {name:"Salary Details",option:[]},
-            // {name:"My Team",option:[]},
-            // {name:"HRMS",option:[]},
-            // {name:"My Reports",option:[]},
             {name:"Hospital",option:[{name:"Show hospital",link:"#"},{name:"Add Hospital",link:"/buildProfile"},{name:"Update Hospital",link:"#"},{name:"Hospital Notification",link:"#"}]},
-            {name:"Location",option:[{name:"Add Location",link:"#"},{name:"Show Location",link:"#"}]},
+            {name:"Location",option:[{name:"Add Location",link:"#"},{name:"Show Location",link:"#"},{name:"Update Location",link:"/upLocation"}]},
             {name:"Area",option:[{name:"Show area",link:"#"},{name:"Add area",link:"#"}]},
-            {name:"Doctor",option:[{name:"Add doctor",link:"#"},{name:"Show doctor",link:"#"}]},
-            {name:"Shift",option:[{name:"Add shift",link:"#"},{name:"Show shift",link:"#"}]},
-            {name:"Specialization",option:[{name:"Show Specialization",link:"#"},{name:"Add Specialization",link:"#"}]},
+            {name:"Doctor",option:[{name:"Add doctor",link:"/addDoctors"},{name:"Show doctor",link:"#"}]},
+            {name:"Shift",option:[{name:"Add Shift",link:"#"},{name:"Show Shift",link:"#"},{name:"Update Shift",link:"/changeShift"}]},
+            {name:"Specialization",option:[{name:"Show Specialization",link:"#"},{name:"Add Specialization",link:"/addSpecialization"}]},
             {name:"Notification",option:[{name:"Hospital Notification",link:"#"}]},
-            {name:"Admin",option:[{name:"Show admin",link:"#"},{name:"Update",link:"#"},{name:"Add admin",link:"#"}]},
-            {name:"Role ",option:[{name:"Add rol",link:"#"},{name:"Show rol",link:"#"},{name:"Update role",link:"#"}]},
+            {name:"Admin",option:[{name:"Show Admin",link:"#"},{name:"Update",link:"#"},{name:"Add admin",link:"#"}]},
+            {name:"My Profile",option:[{name:"About",link:"#"},{name:"Basic Details",link:"#"},{name:"Address Details",link:"#"},{name:"Qualification Details",link:"#"},{name:"Work Experience",link:"#"},{name:"National Identifier",link:"#"},{name:"Language Details",link:"#"},{name:"View Role",link:"#"},{name:"My Photo",link:"#"},]},
+            {name:"Role ",option:[{name:"Add Role",link:"#"},{name:"Show Role",link:"#"},{name:"Update Role",link:"#"}]},
 
         ],
         menuView:-1
@@ -33,7 +26,6 @@ class Dashboard extends Component{
         s1.menuView = s1.menuView===no?"-1":no;
         this.setState(s1);
     }
-
 
     render(){
         const {menuList, menuView} = this.state;
@@ -81,10 +73,8 @@ class Dashboard extends Component{
                                 </div>
                                 }
                                 </React.Fragment>
-
                             ))}
                         </div>
-
                     </div>
                     <div className="col-10 bg-white"></div>
                 </div>

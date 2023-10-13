@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
-import http from "../../services/httpService";
+import http from "../../../services/httpService";
 class Specialization extends Component{
     state={
         specztions:[],pageNo:1,findSpeztion:{speci:"",search:""},

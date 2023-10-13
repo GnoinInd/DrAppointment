@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import Slider from "react-slick";
-import http from "../../services/httpService";
+import http from "../../../services/httpService";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 class Doctors extends Component{

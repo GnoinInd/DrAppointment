@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
-import http from "../../services/httpService";
+import http from "../../../services/httpService";
 class PatientDetails extends Component{
     state={
         patientForm:{firstName:"",lastName:"",email:"",mobileNo:"",DOB:"",gender:""},
@@ -136,9 +136,10 @@ class PatientDetails extends Component{
                     </div>
                     <div className="row mx-0 mt- pb-3" style={{background:"#dadada"}}>
                         <div className="my-2">Download our <span className="text-primary">Ask</span> <span className="text-warning">Apollo</span> App</div>
-                        <div className="col-6"><img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/footer/images/downloadGoogle.svg" width="100%"/></div>
-                        <div className="col-6 text-end"><img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/footer/images/downloadApple.svg" width="90%"/></div>
+                        <div className="col-6"><a href="https://play.google.com/store/games"><img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/footer/images/downloadGoogle.svg" width="100%" style={{cursor:"pointer"}}/></a></div>
+                        <div className="col-6 text-end"><img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/footer/images/downloadApple.svg" width="90%" style={{cursor:"pointer"}}/></div>
                     </div>
+                   
                 </div>
             </div>
         )

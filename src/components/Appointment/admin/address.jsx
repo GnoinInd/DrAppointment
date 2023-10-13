@@ -12,7 +12,7 @@ class Address extends Component{
                 <div className="container py-3 vhsda2">
                     <h3 className="text-primary" >Address Details</h3>
                     
-                    <div class="row pt-3">
+                    <div className="row pt-3">
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Address Type<span className="text-danger"> *</span></label>
                             <select className="form-select " name="city" value="" onChange={this.handleChange}>
@@ -31,7 +31,7 @@ class Address extends Component{
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                     </div>
-                    <div class="row kjhds3">
+                    <div className="row kjhds3">
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Pin Code<span className="text-danger"> *</span></label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
@@ -45,7 +45,7 @@ class Address extends Component{
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                     </div>
-                    <div class="row kjhds3">
+                    <div className="row kjhds3">
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>State/Union Territory<span className="text-danger"> *</span></label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />

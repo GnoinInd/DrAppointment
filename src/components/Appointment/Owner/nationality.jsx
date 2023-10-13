@@ -13,7 +13,7 @@ class Natinality extends Component{
                     <h4 className="fw-bold" >Nationality Details</h4>
                     
                    
-                    <div class="row pt-3">
+                    <div className="row pt-3">
                         <div className="form-group col-md-4 col-12">
                             <label>Nationality1<span className="text-danger"> *</span></label>
                             <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
@@ -23,12 +23,12 @@ class Natinality extends Component{
                             <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                     </div>
-                    <div class="row pt-3">
+                    <div className="row pt-3">
                         <div className="col-md-8 col-12">
                             <h4 className="kdAcS3">Upload Supporting Documents</h4>
                         </div>
                     </div>
-                    <div class="row pt-3">
+                    <div className="row pt-3">
                         <div className="form-group col-md-4 col-12">
                             <label>Type<span className="text-danger"> *</span></label>
                             <select className="form-select " name="city" value="" onChange={this.handleChange}>

@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import { Country, State, City }  from 'country-state-city';
-import http from "../../services/httpService";
+import http from "../../../services/httpService";
 class Hospital extends Component{
     state={hospitals:[],allhospitals:[],prevData:[], pageNo:1,filterHospital:{state:"",city:""},no:0,
             selectData:this.props.location.state,

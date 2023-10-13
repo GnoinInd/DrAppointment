@@ -13,7 +13,7 @@ class BuildProfile extends Component{
                     <h4 className="fw-bold" >Basic Details</h4>
                     
                    
-                    <div class="row pt-3">
+                    <div className="row pt-3">
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Title<span className="text-danger"> *</span></label>
                             <input type="text" className="form-control jnhXd4 w-50" name="" value="" placeholder="" onChange={this.handleChange} />
@@ -31,7 +31,7 @@ class BuildProfile extends Component{
                             <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                     </div>
-                    <div class="row kjhds3">
+                    <div className="row kjhds3">
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Preferred Name<span className="text-danger"> *</span></label>
                             <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
@@ -47,7 +47,7 @@ class BuildProfile extends Component{
                             {/* {cities.map((s1,index)=>(
                                 <option key={index}>{s1.name}</option>
                             ))} */}
-                            </select>
+                            </select> 
                         </div>
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Blood Group</label>
@@ -70,3 +70,5 @@ class BuildProfile extends Component{
 
 }
 export default BuildProfile;
+
+// 8873200678

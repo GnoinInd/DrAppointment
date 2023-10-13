@@ -114,9 +114,11 @@ class ConfirmAppoint extends Component{
                             <input type="checkbox" />
                             <small className="ml-3">I Agree to the <span className="text-primary">Terms & Conditions</span></small>
                         </div>
-                        <div className="text-center mt-3 rounded" style={{background:"#e86a25"}}>
-                            <button className="btn text-white btn-sm"><Link className="text-decoration-none text-white" to="/payment">Confirm Appointment</Link></button>
-                        </div>
+                        <Link to="/payment"> 
+                            <div className="text-center mt-3 rounded" style={{background:"#e86a25"}}>
+                                <button className="btn text-white btn-sm">Confirm Appointment</button>
+                            </div>
+                        </Link>
                     </div>
 
                 </div>

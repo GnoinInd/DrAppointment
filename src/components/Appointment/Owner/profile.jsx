@@ -15,43 +15,9 @@ class MobileVerify extends Component{
     }
     handleSubmit=()=>{
         let s1 = {...this.state};
-        let errors = this.validateAll();
-        if(this.isValid(errors)){
-            console.log(s1.patientForm);
-            // this.postData("/",s1.mobileForm)
-            this.props.history.push({pathname:"/confirmAppoint",state:s1.selectData});
-        }
-        else {
-            s1.errors = errors;
-        }
-        this.setState(s1);
+        alert("Success")
+        this.props.history.push("/admin");
     }
-    handleValidate=(e)=>{
-        let {currentTarget:input} = e;
-        let s1 = {...this.state};
-        switch(input.name){
-            case "mobileNo":
-                s1.errors.mobileNo = this.validateMobileNo(input.value);
-                break;
-            default:
-                break;
-        }  
-    }
-    isValid=(errors)=>{
-        let keys = Object.keys(errors);
-        let count = keys.reduce((acc,curr)=>(errors[curr]?acc+1:acc),0);
-        return count==0;
-    }
-    
-    validateAll=()=>{
-        let {mobileNo} = this.state.mobileForm;
-        let errors={};
-        errors.mobileNo = this.validateMobileNo(mobileNo);
-        return errors;
-    }
-    validateMobileNo=(mobileNo)=>(!mobileNo?"mobileNo must be entered":isNaN(mobileNo)?
-    "Invalid Input":mobileNo.length<10 || mobileNo.length>10?"mobileNo should have minimum 10 Digits":"")
-    
     
     render(){
         const {mobileForm,errors} = this.state;
@@ -62,11 +28,17 @@ class MobileVerify extends Component{
                 
                     <div className="container">
                     <div className="px-4 py-3">
-                        <div className="row bg-primary text-white p-3 w-25 rounded">
-                            <div className="col-2 px-0"><img src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png" className="mt-2" width="100%"/></div>
-                            <div className="col-10">
-                                <small>12541-2541</small>
-                                <h5>Vishal Kumar</h5>
+                        <div className="row mt-5 mx-0">
+                            <div className="col-lg-4 col-md-6 col-11 bg-primary rounded py-2">
+                                <div className="row text-white">
+                                    <div className="col-4 ">
+                                        <img className="jfwaS4" src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png" />            
+                                    </div>
+                                    <div className="col-8" >
+                                        <small>12541-2541</small>
+                                        <h5>Vishal Kumar</h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
