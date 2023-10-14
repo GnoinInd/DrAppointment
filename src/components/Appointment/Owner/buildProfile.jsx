@@ -4,11 +4,18 @@ class BuildProfile extends Component{
     state={
 
     }
-
+    handleChange=(e)=>{
+        const {"currentTarget":input} = e;
+        let s1 = {...this.state};
+        // s1.mobileForm[input.name] = input.value;
+        // this.handleValidate(e);
+        this.setState(s1);
+        // console.log(hh);
+    }
 
     render(){
         return(
-            <div className="" style={{background:"rgb(230, 230, 230)"}}>
+            <div className="py-4" style={{background:"rgb(230, 230, 230)"}}>
                 <div className="container vhsda2 py-3">
                     <h4 className="text-center text-primary" >Build Your Hospital Profile</h4>
                     <div className="d-flex py-4"> 

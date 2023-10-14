@@ -11,9 +11,9 @@ class EducationalDetails extends Component{
     }
     render(){
         return(
-            <div className="" style={{background:"rgb(230, 230, 230)"}}>
+            <div className="py-4" style={{background:"rgb(230, 230, 230)"}}>
 
-                <div className="container vhsda2 py-3">
+                <div className="container vhsda2">
                 <h4 className="fw-bold" >Educational Details</h4>
                     <div className="row mt-3 mx-0">
                         <div className="col-lg-5 col-md-6 col-12 bg-primary rounded py-2">

@@ -41,21 +41,19 @@ a:hover{
     margin:160px 0 0 50px;
     color: blueviolet;
 }
-.vfErx4{
-    display:flex;
-}
 
 
 /* specialization  */
 
 .sdWqe3{
     height: 35px;
-    /* width: 200px; */
     border: none;
-    border-radius: 0px;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     font-size: 16px;
     padding:0 10px 0 12px;
-    box-shadow: 0px 0px 0px 1px rgba(0,0,0,.16)!important;
+    box-shadow: 1px 2px 1px 1px rgba(0,0,0,.16)!important;
     
   }
   input:-webkit-autofill,
@@ -75,32 +73,45 @@ a:hover{
     background-color: #ffff;
     padding: 6px 12px 5px 10px;
     cursor: pointer;
-    /* border-left: 1px solid rgb(219, 219, 219) !important; */
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     color: #215bfa;
-    box-shadow: 0px 0px 0px 1px rgba(0,0,0,.16)!important;
+    box-shadow: 1px 2px 1px 1px rgba(0,0,0,.16)!important;
     border: none;
   }
 .fdeAw3{
-    border: 1px solid rgb(212, 209, 209);
-    /* box-shadow: 0px 0px 0px 1px rgba(0,0,0,.16)!important; */
     background-color: #fff;
     text-align: center;
-    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
 }
+.fdeAw3:hover{
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,.16)!important;
+
+}
+.KCds32{
+    height: 284px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    background-position: right center;
+    border-radius: 8px;
+   
+  }
 .laSew3{
-    background-color: rgb(70, 133, 133);
-    border: none;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0px auto;
     color: #fff;
-    border-radius: 4px;
-    margin-top: 10px;
-    padding: 6px 30px;
-    text-align: center;
-    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 0px;
+    text-align:center; 
 }
-.laSew3:hover{
-    text-decoration: none;
-    color: #fff;
-}
+
 
 .kjUde3{
     margin: 0 12px;
@@ -115,6 +126,12 @@ a:hover{
 /* dr  */
 .gfSde4{
     width: 800px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 2px rgba(2, 2, 2, 0.16)!important;
+}
+.DSwey32{
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 2px rgba(2, 2, 2, 0.16)!important;
 }
 
 /* Rank  */
@@ -144,6 +161,7 @@ a:hover{
 .sdWeAa{
     white-space: nowrap;
     overflow: hidden;
+    /* padding: 10px; */
     text-overflow: ellipsis;
     width: max-content;
     max-width: 100%;
@@ -151,22 +169,29 @@ a:hover{
 }
 .cdsAw2{
     height: 35px;
-    width: 200px;
     border: none;
-    border-radius: 0px;
+    border-radius: 5px;
     font-size: 16px;
     padding:0 35px 0 12px;
-    /* box-shadow: none!important; */
-    box-shadow: 0px 0px 0px 1px rgba(0,0,0,.16)!important;
+    box-shadow: 1px 2px 1px 1px rgba(0,0,0,.16)!important;
     
   }
 .fdekiu{
     color: #000;
-    background-color: #fff;
-    padding: 12px;
-    box-shadow: 0px 0px 0px 1px rgba(0,0,0,.16)!important;
+    background-color: #ebe9e9;
+    border-radius: 8px;
+    box-shadow: 1px 4px 2px 1px rgba(0,0,0,.16)!important;
     cursor: pointer;
 }
+.fdekiu:hover{
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,.16)!important;
+}
+.AQW21w{
+    border-radius: 8px; 
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
 
 /* signIn */
 .popup-box {
@@ -271,22 +296,28 @@ a:hover{
 
 /* patientDetails */
 .CGrew2{
-    width: 350px;
-    background-color: #e6eeff;
+    width: 380px;
+    background-color: #e7eeff;
     margin: 0 auto;
-    box-shadow: 0px 0px 5px 1px rgba(2, 2, 2, 0.16)!important;
+    box-shadow: 0px 0px 5px 2px rgba(2, 2, 2, 0.16)!important;
     /* padding: 20px 20px 0px 20px; */
 }
 .CGrew2 label{
     margin-bottom: 4px;
+    font-weight: 500;
+}
+.CGrew2 input{
+
+    background-color: #e7eeff;
 }
 .CGrew2 .form-control {
-    border-radius: 4px;
-    height: 32px;
+    border-radius: 8px;
+    height: 34px;
     border: 1px solid #3e9696;
     box-shadow: none!important;
     
 }
+
 .Cdsew3d{
     color: #fff;
     background-color: #e86a25;
@@ -321,7 +352,7 @@ a:hover{
 
 .kjhCd4{
     width: 500px;
-    background-color: #ffff;
+    background-color: #e7eeff;
     margin: 0 auto;
     box-shadow: 0px 0px 5px 1px rgba(2, 2, 2, 0.16)!important;
 }
@@ -330,10 +361,14 @@ a:hover{
     border-radius: 4px;
     box-shadow: none;
 }
+.kjhCd4 input{
+    background-color: #e7eeff;
+    border:1px solid #007bff;
+}
 .xdfSe3{
-    background-color: #d6d5d5;
+    background-color: #e86a25;
     border: none;
-    color: black;
+    color: #ffff;
     font-size: 16px;
     font-weight: 600;
     padding: 4px;
@@ -401,6 +436,7 @@ a:hover{
 .szAw2{
     position: relative;
     text-align: end;
+    font-weight: 500;
     font-size: 14px;
     margin-right: 20px;
     cursor: pointer;
@@ -410,7 +446,7 @@ a:hover{
 /* confirmBook */
 .dseFre{
     background-color: #0774a2;
-    padding: 16px 20px;
+    padding: 14px 18px;
     color: #fff;
     margin-right: 15px;
 }
@@ -419,6 +455,14 @@ a:hover{
     display: flex;
     padding-left: 0;
 
+}
+.SDkf43{
+    border-bottom: 1px dotted #e2e0e0;
+}
+
+.SDkf43 > small:first-child{
+    font-weight: 700;
+    margin: 2px 0;
 }
 .khDse4{
     background-color: #fff;
@@ -435,6 +479,11 @@ a:hover{
     height: 30px;
     padding: 0 10px;
     border-radius: 4px;
+}
+.Dse2we{
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 3px rgba(2, 2, 2, 0.16)!important;
+    background-color: #fff;
 }
 
 
@@ -584,12 +633,19 @@ a:hover{
     padding: 4px 2px 4px 8px;
     cursor: pointer;
 }
+.vhsda2{
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.16)!important;
+    padding: 12px ; 
+}
 .vhsda2 label{
+    font-weight: 500;
     margin-bottom: 2px;
 }
-.kjhds3{
-    margin-top: 10px;
+.vhsda2 input, select{
+    background-color: #f2f3f3;
+    border: 1px solid rgb(30, 174, 179);
 }
+
 
 .kdAcS3{
     background-color: #cecbcb;
@@ -630,6 +686,8 @@ a:hover{
     .lineW3{
         width: 230px;
     }
+    
+
 }
 @media only screen and (max-width: 1400px) {
     .lineW3{
@@ -642,20 +700,19 @@ a:hover{
     .lineW3{
         width: 150px;
     }
+    
 }
 @media only screen and (max-width: 992px) {
     .lineW3{
         width: 110px;
-    }
+    } 
 }
 
 @media only screen and (max-width: 768px) {
-    .njCds4{
+    /* .njCds4{
         max-width: 250px;
-    }
-    .kjhds3{
-        margin-top: 0;
-    }
+    } */
+    
     .lineW3{
         width: 90px;
     }
@@ -663,11 +720,14 @@ a:hover{
     
 }
 @media only screen and (max-width: 576px) {
-    .vfErx4{
+    /* .vfErx4{
         display:block;
-    }
+    } */
     .kcdSw{
         margin-top: 15px;
+    }
+    .kjhds3{
+        margin-top: 10px;
     }
     .jhYgt5{
         display: block;
@@ -708,11 +768,6 @@ a:hover{
         border-radius: 2px;
         font-weight: 500;
         text-decoration: none;
-    }
-    .cdsAw2{
-        width: 150px;
-        font-size: 14px;
-        height: 30px;
     }
     .vfdeSw{
         display: block;

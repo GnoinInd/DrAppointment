@@ -8,8 +8,8 @@ class AddDoctors extends Component{
 
     render(){
         return(
-            <div className="" style={{background:"#f2f3f3"}}>
-                <div className="container vhsda2 py-3">
+            <div className="py-4 " style={{background:"#f2f3f3"}}>
+                <div className="container vhsda2">
                     <h4 className="fw-bold" >Basic Details</h4>
                     <div className="row kjhds3">
                         <div className="form-group col-lg-3 col-md-6 col-12">

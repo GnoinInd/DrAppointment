@@ -1970,7 +1970,7 @@ let doctors=[
     {id:"D1",name:"Dr. Bhaskar Basu",qualification:["MBBS"],Speciality:[],expes:15,langs:["English", "Bengali", "Hindi"]},
     {id:"D2",name:"Dr. Prodyut Kumar",qualification:["BDS"],Speciality:[],expes:10,langs:["English", "Hindi"]},
     {id:"D3",name:"Ms. Sreya Chakraborty",qualification:["Msc. in Dietetics & Food Service Management"],Speciality:[],expes:5,langs:["English", "Hindi"]},
-    {id:"D4",name:"Dr. Anindya Dutt",qualification:["MBBS","DNB(Ortho)"],Speciality:[],expes:[],langs:["English", "Hindi", "Bengali"]},
+    {id:"D4",name:"Dr. Anindya Dutt",qualification:["MBBS","DNB(Ortho)"],Speciality:[],expes:3,langs:["English", "Hindi", "Bengali"]},
     {id:"D5",name:"Dr. Shaista Karim",qualification:["MBBS"],Speciality:[],expes:2,langs:["English", "Hindi"]},
     {id:"D6",name:"Dr. Mijanur Rahaman",qualification:["MBBS"],Speciality:[],expes:4,langs:["English", "Hindi"]},
     {id:"D7",name:"Dr. Sk Hanif",qualification:["MBBS" , "DFM"],Speciality:[],expes:6,langs:["English", "Hindi"]},

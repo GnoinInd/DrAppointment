@@ -58,9 +58,9 @@ class PaymentDetails extends Component{
         const {amount,cardNo,exp,cvv} =paymentForm; 
         console.log(paymentForm);
         return(
-            <div className="container-fluid py-4 px-2" style={{background:"#ebebeb",height:"100vh"}}>
+            <div className="container-fluid py-4 px-2" style={{background:"#afafaf",height:"100vh"}}>
                 <div className="kjhCd4">
-                <h5 className="p-2 border-bottom" style={{background:"#ebebeb"}}>Payment Details</h5>
+                <h5 className="p-2 border-bottom text-center" style={{color:"#e86a25"}}>Payment Details</h5>
                     <div className="px-4 py-3">
                         <div className="form-group">
                             <label className="fw-bold">Amount to Pay:</label>
@@ -71,16 +71,16 @@ class PaymentDetails extends Component{
                             <input type="text" className={"form-control "+(errors.cardNo?"border-danger":"")} name="cardNo" value={cardNo} onChange={this.handleChange}/>
                         </div> 
                         <div className="row">
-                            <div className="col-md-5 col-7">
+                            <div className="col-md-5 col-12">
                                 <div className="form-group">
                                     <label className="fw-bold">Expiry Date(MM/YY)</label>
-                                    <input type="text" className={"form-control "+(errors.exp?"border-danger":"")}  name="exp" value={exp} placeholder="MM/YY" onChange={this.handleChange}/>
+                                    <input type="text" className={"form-control col-md-10 col-5 "+(errors.exp?"border-danger":"")}  name="exp" value={exp} placeholder="MM/YY" onChange={this.handleChange}/>
                                 </div> 
                             </div>
-                            <div className="col-md-5 col-7">
+                            <div className="col-md-5 col-12">
                                 <div className="form-group">
                                     <label className="fw-bold">Security Code(CVV)</label>
-                                    <input type="text " className={"form-control "+(errors.cvv?"border-danger":"")} name="cvv" value={cvv} onChange={this.handleChange}/>
+                                    <input type="text" className={"form-control col-md-10 col-5 "+(errors.cvv?"border-danger":"")} name="cvv" value={cvv} onChange={this.handleChange}/>
                                 </div>
                             </div>
                             <div className="col-2 text-start pl-0">
@@ -88,7 +88,7 @@ class PaymentDetails extends Component{
                             </div>
 
                         </div>
-                        <div className="mt-3 text-center rounded" style={{background:"#d6d5d5",cursor: "pointer"}} onClick={()=>this.handleSubmit()}>
+                        <div className="mt-3 text-center rounded" style={{background:"#e86a25",cursor: "pointer"}} onClick={()=>this.handleSubmit()}>
                             <button className="xdfSe3" >Confirm Payment</button>
                         </div>   
                         <div className="text-end py-2" >

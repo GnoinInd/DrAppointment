@@ -14,7 +14,7 @@ class UpdateLocation extends Component{
     }
     render(){
         return(
-            <div className="" style={{background:"rgb(230, 230, 230)"}}>
+            <div className="py-4" style={{background:"rgb(230, 230, 230)"}}>
 
                 <div className="container vhsda2 py-3">
                 <h4 className="fw-bold" >Update Location</h4>

@@ -40,7 +40,8 @@ class Doctors extends Component{
              dateShow.push({day:day,month:month,week:week,monthlong:monthlong,year:year});
         }
 
-        // console.log(selectData);
+        console.log();
+        console.log(doctors);
         const settings = {
             dots: false,
             infinite: false,
@@ -48,32 +49,33 @@ class Doctors extends Component{
             slidesToShow: 3,
             slidesToScroll: 2
           };
+
         return(
-            <div className="container-fluid pb-5" style={{background:"rgb(230, 230, 230)",height:"auto"}}>
+            <div className="container-fluid pb-5" style={{background:"#e7eeff",height:"auto"}}>
                 <div className="container py-3">
                     <div className="" style={{width:"200px"}}>
-                        <select className="form-select cdsAw2" id="inlineFormCustomSelect">
-                            <option  >Choose Location</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                        <select className="form-select cdsAw2" >
+                            <option  >Choose Doctors</option>
+                            {doctors.map((d1,index)=>(
+                                <option value="1" key={index}>{d1.name}</option>
+                            ))}
                         </select>
                     </div>
                     
                 </div>
                 <div>
                     {doctors.map((d1,index)=>(
-                    <div className="container p-0 mt-2 gfSde4" key={index}>
-                        <div className="bg-white border">
+                    <div className="container p-0 mt-3 gfSde4" key={index}>
+                        <div className="bg-white DSwey32">
                             <div className="row p-2">
                                 <div className="col-2"> 
                                     <img src="https://cdn.askapollo.com/live/images/doctors/defaultfemale.jpg" width="100%"/>
                                 </div>
                                 <div className="col-sm-6 col-12">
-                                    <div className="fw-bold" style={{color:"#5a8ca1"}}>{d1.name}</div>
+                                    <div className="fw-bold mb-2" style={{color:"#5a8ca1",fontSize:"18px"}}>{d1.name}</div>
                                     <div className="row mx-0" style={{borderBottom:"1px dotted #e2e0e0"}}>
                                         <div className="col-5 p-0">
-                                            <small>Qualification:</small>
+                                            <small className="fw-bold">Qualification:</small>
                                         </div>
                                         <div className="col-7 p-0">
                                             <small>{d1.qualification.join(", ")}</small>
@@ -81,15 +83,15 @@ class Doctors extends Component{
                                     </div>
                                     <div className="row mx-0" style={{borderBottom:"1px dotted #e2e0e0"}}>
                                         <div className="col-5 p-0">
-                                            <small>Exprence:</small>
+                                            <small className="fw-bold">Exprence:</small>
                                         </div>
                                         <div className="col-7 p-0">
-                                            <small>{d1.expes}</small>
+                                            <small>{d1.expes} yrs</small>
                                         </div>
                                     </div>
                                     <div className="row mx-0" style={{borderBottom:"1px dotted #e2e0e0"}}>
                                         <div className="col-5 p-0">
-                                            <small>Speciality:</small>
+                                            <small className="fw-bold">Speciality:</small>
                                         </div>
                                         <div className="col-7 p-0">
                                             <small>gynaecologist</small>
@@ -97,7 +99,7 @@ class Doctors extends Component{
                                     </div>
                                     <div className="row mx-0" style={{borderBottom:"1px dotted #e2e0e0"}}>
                                         <div className="col-5 p-0">
-                                            <small>Language:</small>
+                                            <small className="fw-bold">Language:</small>
                                         </div>
                                         <div className="col-7 p-0">
                                             <small>{d1.langs.join(", ")}</small>
@@ -106,8 +108,8 @@ class Doctors extends Component{
                                     
                                 </div>
                                 <div className="col-sm-4 col-12 jhSdew">
-                                    <div><small >Monday|Tusesday, Wednesday|Thursday, Saturday</small></div>
-                                    <div className="mt-2"><small style={{color:"#f08345"}}>(09:15 Am-01:45 PM, 01:45PM-08:00PM|09:00 AM-01:45PM, 01:45 PM-08:00 PM|09:00 AM-01:45PM, 01:45 PM-08:00 PM)</small></div>
+                                    <div><small >Monday | Tusesday, Wednesday | Thursday, Saturday</small></div>
+                                    <div className="mt-2"><small style={{color:"#f08345"}}>(09:15 Am-01:45 PM, 01:45PM-08:00PM | 09:00 AM-01:45PM, 01:45 PM-08:00 PM | 09:00 AM-01:45PM, 01:45 PM-08:00 PM)</small></div>
                                     <div><small><i className="fa-solid fa-location-dot mr-2" style={{color:"#5a8ca1"}}></i>Apollo Clinic Prince Anwar Shah Road</small></div>
                                     <div className="mt-4 text-center">
                                         <button className="btn btn-sm text-white fw-bold" style={{background:"#f08345"}} onClick={()=>this.handleShow(index)}>Book Appointment</button>

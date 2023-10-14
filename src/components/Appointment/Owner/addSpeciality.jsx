@@ -8,7 +8,7 @@ class AddSpeciality extends Component{
 
     render(){
         return(
-            <div className="" style={{background:"rgb(230, 230, 230)"}}>
+            <div className="py-4" style={{background:"rgb(230, 230, 230)"}}>
                 <div className="container vhsda2 py-3">
                     <h4 className="text-center text-primary" >Add Speciality</h4>
                     <div className="d-flex py-4" > 

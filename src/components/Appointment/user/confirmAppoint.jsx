@@ -15,34 +15,34 @@ class ConfirmAppoint extends Component{
         console.log(selectData);
 
         return(
-            <div className="container-fluid p-4" style={{background:"rgb(230, 230, 230)",height:"auto"}}>
+            <div className="container-fluid py-5" style={{background:"#e7eeff",height:"auto"}}>
                 <div className="container">
-                <div className="row ml-">
-                    <div className="col-lg-6 col-12 bg-white rounded "> 
+                <div className="row">
+                    <div className="col-lg-6 col-12 Dse2we"> 
                         <div className="row py-3 px-2">
                             <div className="col-sm-6 col-12 sdAwq2 mr-4 border">
-                                <div className="dseFre"> <i className="fa-solid fa-location-dot"></i>  </div>
+                                <div className="dseFre"> <i className="fa-regular fa-calendar fa-xl"></i>  </div>
                                 <div className="py-1">
-                                    <small style={{fontSize:"12px"}}>Appointment Date</small>
+                                    <small style={{fontSize:"14px",fontWeight:"500"}}>Appointment Date</small>
                                     <div style={{color:"#0774a2",fontWeight:"500",fontSize:"14px"}}>{date.monthlong} {date.day}, {date.year}</div>
                                 </div>  
                             </div>
                             <div className="col-sm-6 col-12 sdAwq2 border">
-                                <div className="dseFre"> <i className="fa-regular fa-clock"></i> </div>
+                                <div className="dseFre"> <i className="fa-regular fa-clock fa-xl"></i> </div>
                                 <div className="py-1">
-                                    <small style={{fontSize:"12px"}}>Appointment Time</small>
+                                    <small style={{fontSize:"14px",fontWeight:"500"}}>Appointment Time</small>
                                     <div style={{color:"#0774a2",fontWeight:"500",fontSize:"14px"}}>{time}</div>
                                 </div>
                             </div>
                         </div>
-                        <div className="row py-3 ">
+                        <div className="row py-2 ">
                             <div className="col-sm-4 col-12 mb-2 text-center">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJABO838SvPqz39uGQ8dWKV19eSR7OE-BYQ&usqp=CAU" width="140px" style={{borderRadius:"50%"}}/>
                             </div>
                             <div className="col-sm-8  col-12">
-                                <div style={{color:"#0774a2",fontWeight:"500"}}>{doctor}</div>
+                                <div style={{color:"#0774a2",fontSize:"20px",fontWeight:"500"}}>{doctor}</div>
                                 <small>{qualifi.join(", ")}</small>
-                                <div><small style={{color:"#0774a2",fontWeight:"500"}}>{specztions}</small></div>
+                                <div><small style={{fontWeight:"500"}}>{specztions}</small></div>
                             </div>
                         </div>
                         <hr className="m-0 p-0"/>
@@ -62,15 +62,15 @@ class ConfirmAppoint extends Component{
 
                     
                     <div className="col-lg-6 col-12  mt-4  ">
-                        <div className="bg-white p-4 rounded">
+                        <div className="p-4 Dse2we">
                             <div>
-                                <span style={{color:"#0774a2",fontWeight:"500",marginRight:"40px"}}>Booking For:</span>
+                                <span style={{color:"#0774a2",fontWeight:"700",marginRight:"40px"}}>Booking For:</span>
                                 <button className={"khDse4 "+(bookFor?"DSew34":"")} onClick={()=>this.handleFor(true)}>Self</button>
                                 <button className={"khDse4 "+(bookFor?"":"DSew34")} onClick={()=>this.handleFor(false)}>Relative</button>
                             
                             </div>
                             <hr className="mt-3 mb-2"/>
-                            <small>UHD's Linked to your mobile no :</small>
+                            <small className="fw-bold">UHD's Linked to your mobile no :</small>
                             <div>
                                 <select className="form-select sdeZa3" >
                                     <option  >Choose</option>
@@ -80,30 +80,30 @@ class ConfirmAppoint extends Component{
                                 </select>
                             </div>
                             <div className="mt-3">
-                                <div style={{color:"#0774a2",fontWeight:"500"}}>My Details</div>
-                                <div className="row" style={{borderBottom:"1px dotted #e2e0e0"}}>
-                                    <small className="col-3">First Name:</small>
-                                    <small className="col-9" style={{color:"#e86a25"}}>{firstName}</small>
+                                <div style={{color:"#0774a2",fontWeight:"700",marginBottom:"10px"}}>My Details</div>
+                                <div className="row SDkf43">
+                                    <small className="col-3">First Name<span className="float-right">:</span></small>
+                                    <small className="col-9">{firstName}</small>
                                 </div>
-                                <div className="row" style={{borderBottom:"1px dotted #e2e0e0"}}>
-                                    <small className="col-3">Last Name:</small>
-                                    <small className="col-7" style={{color:"#e86a25"}}>{lastName}</small>
+                                <div className="row SDkf43">
+                                    <small className="col-3">Last Name<span className="float-right">:</span></small>
+                                    <small className="col-7">{lastName}</small>
                                 </div>
-                                <div className="row" style={{borderBottom:"1px dotted #e2e0e0"}}>
-                                    <small className="col-3">MobileNo:</small>
-                                    <small className="col-7" style={{color:"#e86a25"}}>{mobileNo}</small>
+                                <div className="row SDkf43">
+                                    <small className="col-3">MobileNo<span className="float-right">:</span></small>
+                                    <small className="col-7">{mobileNo}</small>
                                 </div>
-                                <div className="row" style={{borderBottom:"1px dotted #e2e0e0"}}>
-                                    <small className="col-3">Email:</small>
-                                    <small className="col-7" style={{color:"#e86a25"}}>{email}</small>
+                                <div className="row SDkf43">
+                                    <small className="col-3">Email<span className="float-right">:</span>hhhy</small>
+                                    <small className="col-7">{email}</small>
                                 </div>
-                                <div className="row" style={{borderBottom:"1px dotted #e2e0e0"}}>
-                                    <small className="col-3">DOB:</small>
-                                    <small className="col-7" style={{color:"#e86a25"}}>{DOB}</small>
+                                <div className="row SDkf43">
+                                    <small className="col-3">DOB<span className="float-right">:</span></small>
+                                    <small className="col-7">{DOB}</small>
                                 </div>
-                                <div className="row" style={{borderBottom:"1px dotted #e2e0e0"}}>
-                                    <small className="col-3">Gender:</small>
-                                    <small className="col-7" style={{color:"#e86a25"}}>{gender}</small>
+                                <div className="row SDkf43">
+                                    <small className="col-3">Gender<span className="float-right">:</span></small>
+                                    <small className="col-7">{gender}</small>
                                 </div>
                             </div>
                             <div>

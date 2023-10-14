@@ -94,10 +94,10 @@ class PatientDetails extends Component{
         const {firstName,lastName,email,mobileNo,DOB,gender} = patientForm;
         // console.log(selectData);
         return(
-            <div className="container-fluid py-4 px-2" style={{background:"#ebebeb"}}>
+            <div className="container-fluid py-4 px-2" style={{background:"#f3f5f8"}}>
                 <div className="CGrew2">
                     <div className="px-4 py-3">
-                    <h5 style={{color:"#e86a25"}}>Patient Details</h5>
+                    <h5 className="fw-bold mb-4" style={{color:"#e86a25"}}>Patient Details</h5>
 
                     <div className="form-group">
                         <label>First Name:</label>

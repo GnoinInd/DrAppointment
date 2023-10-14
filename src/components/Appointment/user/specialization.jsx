@@ -50,34 +50,41 @@ class Specialization extends Component{
 
         return(
 
-            <div className="container-fluid py-3" style={{background:"#f1f3f6"}}>
+            <div className="container-fluid py-3" style={{background:"#e7eeff "}}>
                
-                <div className="container vfErx4">
-                    <div className="mr-4" style={{width:"220px"}}>
-                        <select className="form-select cdsAw2" name="speci" value={speci} onChange={this.handleChange}>
-                            <option value="" disabled >Choose Specialization</option>
-                            {specztions.map((s1,index)=>(
-                                <option key={index}>{s1.name}</option>
-                            ))}
-                        </select>
-                    </div>
-                    <div className="d-flex kcdSw">
-                        <div className="njCds4" >
-                            <input className="form-control sdWqe3" type="text" name="search"  placeholder="Search..." autoComplete="off" onChange={this.handleChange} />  
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-3 col-sm-5 col-10" >
+                            <select className="form-select cdsAw2" name="speci" value={speci} onChange={this.handleChange}>
+                                <option value="" disabled >Choose Specialization</option>
+                                {specztions.map((s1,index)=>(
+                                    <option key={index}>{s1.name}</option>
+                                ))}
+                            </select>
                         </div>
-                        <div className="">
-                            <button className="cgDSe4" onClick={()=>this.handleSrch()}><i className="fa-solid fa-magnifying-glass" ></i></button>
+                        <div className="col-lg-7 col-sm-5 col-10 kjhds3 d-flex">
+                            <div className="njCds4" >
+                                <input className="form-control sdWqe3" type="text" name="search"  placeholder="Search..." autoComplete="off" onChange={this.handleChange} />  
+                            </div>
+                            <div className="">
+                                <button className="cgDSe4" onClick={()=>this.handleSrch()}><i className="fa-solid fa-magnifying-glass" ></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="mt-2">
                     <div className="row">
                     {specztions1.map((sp,index)=>(
-                        <div className="col-lg-4 col-sm-6 col-12 mt-4 " key={index}>
+                        <div className="col-lg-4 col-sm-6 col-12 mt-5 " key={index}>
+                        <Link to={{pathname:`/hospitals/${sp.id}`,state:{specztions:sp.name}}}>
                             <div className="fdeAw3">
-                                <img src={sp.img} width="100%" height="240px" />
-                                <div className="mt-4"><Link className="laSew3" to={{pathname:`/hospitals/${sp.id}`,state:{specztions:sp.name}}}>{sp.name}</Link></div>
+                                <div className="KCds32" style={{backgroundImage:`linear-gradient(to bottom, transparent 82%, #000000bd 90%, #000000 100%),url("${sp.img}")`}}>
+                                    <div className="laSew3">{sp.name}</div>
+                                </div>
+                                {/* <img src={sp.img} width="100%" height="284px" className="rounded" />  */}
+                               
                             </div>
+                            </Link>
                         </div>
                     ))}
                     </div>
