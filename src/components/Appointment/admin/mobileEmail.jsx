@@ -79,7 +79,7 @@ class MobileGmail extends Component{
                             <input type="text" className="form-control"  placeholder=""/>
                         </div> 
                        <div className="text-center my-5">
-                            <Link className="btn btn-primary btn-sm px-5" to="/vryMobile">Sent OTP</Link>
+                            <Link className="btn btn-primary btn-sm px-5" to="/admin/vryMobile">Sent OTP</Link>
                        </div>
                     </div>
                  

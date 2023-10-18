@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 class PaymentDetails extends Component{
-    state={ paymentForm:{amount:"",cardNo:"",exp:"",cvv:""},errors:{}
+    state={ paymentForm:{amount:"",cardNo:"",exp:"",cvv:""},errors:{},
     }   
     handleChange=(e)=>{
         const {"currentTarget":input} = e;
@@ -11,7 +11,7 @@ class PaymentDetails extends Component{
         }else{
             s1.paymentForm[input.name] = input.value;
         }
-        
+    
         this.setState(s1);
     }
 
@@ -71,7 +71,7 @@ class PaymentDetails extends Component{
                             <input type="text" className={"form-control "+(errors.cardNo?"border-danger":"")} name="cardNo" value={cardNo} onChange={this.handleChange}/>
                         </div> 
                         <div className="row">
-                            <div className="col-md-5 col-12">
+                            <div className="col-md-5 pr-0 col-12">
                                 <div className="form-group">
                                     <label className="fw-bold">Expiry Date(MM/YY)</label>
                                     <input type="text" className={"form-control col-md-10 col-5 "+(errors.exp?"border-danger":"")}  name="exp" value={exp} placeholder="MM/YY" onChange={this.handleChange}/>

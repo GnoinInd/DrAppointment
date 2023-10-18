@@ -1,14 +1,24 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
+import {Switch, Route, Redirect } from "react-router-dom";
 import ImgLogo from "../imgMenu.png"
+import BuildProfile from "./buildProfile";
+import MobileOtp from "./mobileOtp";
+import MobileGmailVry from "./mobileGmailVry";
+import AddHospital from "./addHospital";
+import AddSpeciality from "./addSpeciality";
+import AddDoctors from "../admin/addDoctors";
+import MobileEmail from "../admin/mobileEmail";
+import VryMobile from "../admin/VryMobile";
+import VryEmail from "../admin/vryEmail";
 class Dashboard extends Component{
     state={
         menuList:[
-            {name:"Hospital",option:[{name:"Show hospital",link:"#"},{name:"Add Hospital",link:"/buildProfile"},{name:"Update Hospital",link:"#"},{name:"Hospital Notification",link:"#"}]},
-            {name:"Location",option:[{name:"Add Location",link:"#"},{name:"Show Location",link:"#"},{name:"Update Location",link:"/upLocation"}]},
+            {name:"Hospital",option:[{name:"Show hospital",link:"#"},{name:"Add Hospital",link:"/owner/buildProfile"},{name:"Update Hospital",link:"#"},{name:"Hospital Notification",link:"#"}]},
+            {name:"Location",option:[{name:"Add Location",link:"#"},{name:"Show Location",link:"#"}]},
             {name:"Area",option:[{name:"Show area",link:"#"},{name:"Add area",link:"#"}]},
-            {name:"Doctor",option:[{name:"Add doctor",link:"/addDoctors"},{name:"Show doctor",link:"#"}]},
-            {name:"Shift",option:[{name:"Add Shift",link:"#"},{name:"Show Shift",link:"#"},{name:"Update Shift",link:"/changeShift"}]},
+            {name:"Doctor",option:[{name:"Add doctor",link:"/owner/addDoctors"},{name:"Show doctor",link:"#"}]},
+            {name:"Shift",option:[{name:"Add Shift",link:"#"},{name:"Show Shift",link:"#"}]},
             {name:"Specialization",option:[{name:"Show Specialization",link:"#"},{name:"Add Specialization",link:"/addSpecialization"}]},
             {name:"Notification",option:[{name:"Hospital Notification",link:"#"}]},
             {name:"Admin",option:[{name:"Show Admin",link:"#"},{name:"Update",link:"#"},{name:"Add admin",link:"#"}]},
@@ -76,7 +86,23 @@ class Dashboard extends Component{
                             ))}
                         </div>
                     </div>
-                    <div className="col-10 bg-white"></div>
+                    <div className="col-10 px-0 text-dark bg-white">
+                    
+                        <Route path="/owner/buildProfile" component={BuildProfile}/>
+                        <Route path="/owner/addHospital" component={AddHospital}/>
+                        <Route path="/mobileVry" component={MobileOtp}/>
+                        <Route path="/mobileGmailVry" component={MobileGmailVry}/>
+                        <Route path="/addHospital" component={AddHospital}/>
+                        <Route path="/addSpeciality" component={AddSpeciality}/>
+                        <Route path="/owner/addDoctors" component={AddDoctors}/>
+
+                        <Route path="/mobileEmail" component={MobileEmail}/>
+                        <Route path="/vryMobile" component={VryMobile}/>
+                        <Route path="/vryEmail" component={VryEmail}/>
+
+                    </div>
+                    
+                                
                 </div>
                
             </div>

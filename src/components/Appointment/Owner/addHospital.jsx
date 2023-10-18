@@ -7,9 +7,9 @@ class AddHospital extends Component{
 
     render(){
         return(
-            <div className="py-4" style={{background:"rgb(230, 230, 230)"}}>
+            <div className="py-2" style={{background:"rgb(230, 230, 230)"}}>
 
-                <div className="container vhsda2 py-3">
+                <div className="container vhsda2 py-2">
                     <h4 className="text-center text-primary" >Build Your Hospital Details</h4>
                     <div className="d-flex py-4"> 
                         
@@ -21,12 +21,12 @@ class AddHospital extends Component{
                             <div className="lineW3"></div>
                             <div className="cdsWq3 khcdx1">Hospital Details</div>
                         </div>
-                        <div className="arrowd3">
+                        {/* <div className="arrowd3">
                             <div className="lineW3"></div>
                             <div className="cdsWq3">Add Specialist</div>
-                        </div>
+                        </div> */}
                         <div className="circled3">
-                            <div className="cdsWqs3 ">Add Doctor</div>
+                            <div className="cdsWqs3 ">Add Specialist</div>
                         </div>
                     </div>
                     <div className="row pt-5">

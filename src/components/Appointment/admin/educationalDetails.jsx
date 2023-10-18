@@ -1,8 +1,9 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
+import Select from 'react-select';
 class EducationalDetails extends Component{
     state={
-
+        optionArr:[{value:"",label:""}],selectedOption: null,
     }
    
     handleSubmit=()=>{
@@ -10,11 +11,11 @@ class EducationalDetails extends Component{
         this.props.history.push("/admin");
     }
     render(){
+        const {optionArr,selectedOption} = this.state;
         return(
-            <div className="py-4" style={{background:"rgb(230, 230, 230)"}}>
-
+            <div style={{background:"rgb(230, 230, 230)"}}>
                 <div className="container vhsda2">
-                <h4 className="fw-bold" >Educational Details</h4>
+                <h5 className="fw-bold text-center" >Educational Details</h5>
                     <div className="row mt-3 mx-0">
                         <div className="col-lg-5 col-md-6 col-12 bg-primary rounded py-2">
                             <div className="row text-white">
@@ -33,25 +34,45 @@ class EducationalDetails extends Component{
                     <div className="row mt-4">
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Location</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                                <option disabled value="" >Choose Location</option>
+                            {/* {cities.map((s1,index)=>(
+                                <option key={index}>{s1.name}</option>
+                            ))} */} 
+                            </select>
                         </div>
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>City</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                                <option disabled value="" >Choose City</option>
+                            {/* {cities.map((s1,index)=>(
+                                <option key={index}>{s1.name}</option>
+                            ))} */} 
+                            </select>
                         </div>
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Area</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                                <option disabled value="" >Choose Area</option>
+                            {/* {cities.map((s1,index)=>(
+                                <option key={index}>{s1.name}</option>
+                            ))} */} 
+                            </select>
                         </div>
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Specialization</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                                <option disabled value="" >Choose Specialization</option>
+                            {/* {cities.map((s1,index)=>(
+                                <option key={index}>{s1.name}</option>
+                            ))} */} 
+                            </select>
                         </div>
                     </div>
                     <div className="row kjhds3">
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Sub-Specialization</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <Select isMulti={true} value={selectedOption} onChange={this.handleChange} option={optionArr}/>
                         </div>
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Designation</label>
@@ -87,11 +108,11 @@ class EducationalDetails extends Component{
                     <div className="row kjhds3">
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Start Date</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="date" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>End Date</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="date" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                     </div>
                     <div className="text-center mt-4">

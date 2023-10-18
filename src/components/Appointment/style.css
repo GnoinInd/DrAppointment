@@ -351,7 +351,7 @@ a:hover{
 /* payment */
 
 .kjhCd4{
-    width: 500px;
+    width: 450px;
     background-color: #e7eeff;
     margin: 0 auto;
     box-shadow: 0px 0px 5px 1px rgba(2, 2, 2, 0.16)!important;
@@ -515,6 +515,14 @@ a:hover{
     margin: 3px 8% 0px 8%
 
   }
+  .circled4{
+    width: 25px;
+    height: 25px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    margin: 3px 8% 0px 8%
+
+  }
 
 .lineW3{
     background-color: #ffff;
@@ -634,14 +642,13 @@ a:hover{
     cursor: pointer;
 }
 .vhsda2{
-    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.16)!important;
     padding: 12px ; 
 }
 .vhsda2 label{
     font-weight: 500;
     margin-bottom: 2px;
 }
-.vhsda2 input, select{
+.vhsda2 input, .vhsda2 select{
     background-color: #f2f3f3;
     border: 1px solid rgb(30, 174, 179);
 }
@@ -782,6 +789,7 @@ a:hover{
         width: 100%;
         text-align: center;
         margin-bottom: 10px;
+        color: #e3e7f0;
     }
   }
 

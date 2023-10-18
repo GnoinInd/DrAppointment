@@ -1,16 +1,34 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
-import ImgLogo from "../imgMenu.png"
+import {Switch, Route, Redirect } from "react-router-dom";
+import ImgLogo from "../imgMenu.png";
+import EducationalDetails from "./educationalDetails";
+import AddDoctors from "./addDoctors";
+import MobileEmail from "./mobileEmail";
+import VryMobile from "./VryMobile";
+import VryEmail from "./vryEmail";
+import ChangeShift from "./changeShift";
+import AddSpecialization from "./upSpecialization";
+import UpLocation from "./upLocation";
+import BuildProfile from "../Owner/buildProfile";
+import MobileOtp from "../Owner/mobileOtp";
+import MobileGmailVry from "../Owner/mobileGmailVry";
+import AddHospital from "../Owner/addHospital";
+import AddSpeciality from "../Owner/addSpeciality";
 class Dashboard extends Component{
     state={
         menuList:[
-            {name:"Doctor",option:[{name:"Show Doctor",link:"#"},{name:"Add Doctor",link:"/addDoctors"},{name:"Add Qualification",link:"#"},{name:"Set Location and area",link:"#"},{name:"Add/Set Specialization",link:"/addSpecialization"},{name:"Update Location and area",link:"#"}]},
+            {name:"Doctor",option:[{name:"Show Doctor",link:"#"},{name:"Add Doctor",link:"/admin/addDoctors"},{name:"Add Qualification",link:"#"},{name:"Set Location and area",link:"#"},{name:"Add/Set Specialization",link:"/addSpecialization"},{name:"Update Location and area",link:"#"}]},
             {name:"Appointment",option:[{name:"Show Appointment",link:"#"},{name:"Cancel Appointment",link:"#"},{name:"Reschedule Appointment",link:"#"}]},
-            {name:"Hospital",option:[{name:"Show hospital",link:"#"},{name:"Add hospital",link:"/buildProfile"},{name:"Show hospital Lcation",link:"#"},{name:"Add hospital Area",link:"/upLocation"}]},
+            {name:"Hospital",option:[{name:"Show hospital",link:"#"},{name:"Add hospital",link:"/admin/buildProfile"},{name:"Show hospital Lcation",link:"#"},{name:"Add hospital Area",link:"/upLocation"}]},
             {name:"Notification",option:[{name:"Doctor Notification",link:"#"},{name:"Patient/User Notification",link:"#"},{name:"Send Notification",link:"#"},{name:"Shift Notification",link:"#"},{name:"Leave Notification",link:"#"}]},
+            {name:"Location",option:[{name:"Add Location",link:"#"},{name:"Show Location",link:"#"},{name:"Update Location",link:"/admin/upLocation"}]},
+            {name:"Shift",option:[{name:"Add Shift",link:"#"},{name:"Show Shift",link:"#"},{name:"Update Shift",link:"/admin/changeShift"}]},
             {name:"Leave",option:[{name:"Show DR Leave",link:"#"}]},
-            {name:"Educational Details",option:[{name:"Add Educational Details",link:"/educationalDetails"}]},
+            {name:"Educational Details",option:[{name:"Add Educational Details",link:"/admin/educationalDetails"}]},
             {name:"My Profile",option:[{name:"About",link:"#"},{name:"Basic Details",link:"#"},{name:"Address Details",link:"#"},{name:"Qualification Details",link:"#"},{name:"Work Experience",link:"#"},{name:"National Identifier",link:"#"},{name:"Language Details",link:"#"},{name:"View Role",link:"#"},{name:"My Photo",link:"#"},]},
+            {name:"Specialization Dr",option:[{name:"Show Specialization",link:"#"},{name:"Add Specialization",link:"/addSpecialization"},{name:"Update Specialization",link:"/admin/upSpecialization"}]},
+            {name:"Specialization Hospital",option:[{name:"Show Specialization",link:"#"},{name:"Add Specialization",link:"/addSpecialization"}]},
             {name:"Inquiry",option:[{name:"",link:"#"}]},
             {name:"Dr Profile",option:[{name:"",link:"#"}]},
             
@@ -74,7 +92,24 @@ class Dashboard extends Component{
                             ))}
                         </div>
                     </div>
-                    <div className="col-10 bg-white"></div>
+                    <div className="col-10 px-0 text-dark bg-white">
+                        <Switch>
+                            <Route path="/admin/educationalDetails" component={EducationalDetails}/>
+                            <Route path="/admin/addDoctors" component={AddDoctors}/>
+                            <Route path="/admin/mobileEmail" component={MobileEmail}/>
+                            <Route path="/admin/vryMobile" component={VryMobile}/>
+                            <Route path="/admin/vryEmail" component={VryEmail}/>
+                            <Route path="/admin/upSpecialization" component={AddSpecialization}/>
+                            <Route path="/admin/changeShift" component={ChangeShift}/>
+                            <Route path="/admin/upLocation" component={UpLocation}/>
+
+                            <Route path="/admin/buildProfile" component={BuildProfile}/>
+                            <Route path="/mobileVry" component={MobileOtp}/>
+                            <Route path="/mobileGmailVry" component={MobileGmailVry}/>
+                            <Route path="/addHospital" component={AddHospital}/>
+                            <Route path="/addSpeciality" component={AddSpeciality}/>
+                        </Switch>
+                    </div>
                 </div>
             </div>
         )

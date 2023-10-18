@@ -17,9 +17,9 @@ class MobileGmailVry extends Component{
         let s1 = {...this.state};
         let errors = this.validateAll();
         if(this.isValid(errors)){
-            console.log(s1.patientForm);
+            // console.log(s1.patientForm);
             // this.postData("/",s1.mobileForm)
-            this.props.history.push({pathname:"/confirmAppoint",state:s1.selectData});
+            // this.props.history.push({pathname:"/confirmAppoint",state:s1.selectData});
         }
         else {
             s1.errors = errors;

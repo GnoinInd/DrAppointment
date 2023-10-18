@@ -111,7 +111,7 @@ class ConfirmAppoint extends Component{
                             </div>
                         </div>
                         <div className="mt-3">
-                            <input type="checkbox" />
+                            <input type="checkbox"/>
                             <small className="ml-3">I Agree to the <span className="text-primary">Terms & Conditions</span></small>
                         </div>
                         <Link to="/payment"> 

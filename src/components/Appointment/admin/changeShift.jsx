@@ -11,11 +11,11 @@ class AddHospital extends Component{
     }
     render(){
         return(
-            <div className="py-4" style={{background:"rgb(230, 230, 230)"}}>
+            <div style={{background:"rgb(230, 230, 230)"}}>
 
                 <div className="container vhsda2 py-3">
-                <h4 className="fw-bold" >Change Shift</h4>
-                    <div className="row mt-5 mx-0">
+                <h5 className="fw-bold text-center" >Change Shift</h5>
+                    <div className="row mt-3 mx-0">
                         <div className="col-lg-5 col-md-6 col-12 bg-primary rounded py-2">
                             <div className="row text-white">
                                 <div className="col-3 Zaaq21 mt-3">
@@ -28,39 +28,74 @@ class AddHospital extends Component{
                                     <div>Qualification</div>
                                     <div>Contact No</div>
                                     <div>Specialist</div>
+                                    <div>Location</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="row mt-4">
-                        <div className="form-group col-lg-4 col-md-6 col-12">
+                        <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Hospital Name</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                                <option disabled value="" >Choose Hospital Name</option>
+                            {/* {cities.map((s1,index)=>(
+                                <option key={index}>{s1.name}</option>
+                            ))} */} 
+                            </select>
                         </div>
-                        <div className="form-group col-lg-4 col-md-6 col-12">
+                        <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Designation</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                                <option disabled value="" >Choose Designation</option>
+                            {/* {cities.map((s1,index)=>(
+                                <option key={index}>{s1.name}</option>
+                            ))} */} 
+                            </select>
                         </div>
-                        <div className="form-group col-lg-3 col-md-4 col-8">
+                        <div className="form-group col-lg-2 col-md-3 col-8">
                             <label>Id</label>
                             <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
+                        <div className="form-group col-lg-3 col-md-6 col-12">
+                            <label>Current Location</label>
+                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                        </div>
+                       
                     </div>
+                    <hr/>
+                    
                     <div className="row kjhds3">
+                    <h6 className="fw-bold mb-4">Update New Location</h6>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Location</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                                <option disabled value="" >Choose Location</option>
+                            {/* {cities.map((s1,index)=>(
+                                <option key={index}>{s1.name}</option>
+                            ))} */} 
+                            </select>
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>City</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                                <option disabled value="" >Choose City</option>
+                            {/* {cities.map((s1,index)=>(
+                                <option key={index}>{s1.name}</option>
+                            ))} */} 
+                            </select>
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Area</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                                <option disabled value="" >Choose Area</option>
+                            {/* {cities.map((s1,index)=>(
+                                <option key={index}>{s1.name}</option>
+                            ))} */} 
+                            </select>
                         </div>
                     </div>
                     <div className="row kjhds3">
+                        <label>Shift</label>
                         <div className="form-check col-lg-3 col-md-6 col-12">
                             <input className="form-check-input ml-1" type="radio" name="shif" value="option2"/>
                             <label className="form-check-label ml-4" >Mornning</label>
