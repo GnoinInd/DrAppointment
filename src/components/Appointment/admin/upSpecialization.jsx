@@ -4,11 +4,13 @@ import Select from 'react-select';
 class UpdateLocation extends Component{
     state={
         options:[{value:"Abc",label:"Abc"},{value:"Cde",label:"Cde"}],selectedOption: null,
+        
     }
     handleChange=(e)=>{
         const {"currentTarget":input} = e;
         let s1 = {...this.state};
-        s1.selectedOption=input.name=="Subspecialization"? input.value:"";
+        console.log(e);
+        s1.selectedOption=e;
         this.setState(s1);
     }
     handleUpdate=()=>{
@@ -107,7 +109,7 @@ class UpdateLocation extends Component{
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Sub-Specialization</label>
-                            <Select isMulti={true} value={selectedOption} name="Subspecialization" onChange={this.handleChange} option={options}/>
+                            <Select isMulti value={selectedOption} name="subSpecialization" onChange={this.handleChange} options={options}/>
                         </div>                       
                     </div>      
                     <div className="text-center mt-4">

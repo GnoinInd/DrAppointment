@@ -18,7 +18,7 @@ import AddSpeciality from "../Owner/addSpeciality";
 class Dashboard extends Component{
     state={
         menuList:[
-            {name:"Doctor",option:[{name:"Show Doctor",link:"#"},{name:"Add Doctor",link:"/admin/addDoctors"},{name:"Add Qualification",link:"#"},{name:"Set Location and area",link:"#"},{name:"Add/Set Specialization",link:"/addSpecialization"},{name:"Update Location and area",link:"#"}]},
+            {name:"Doctor",option:[{name:"Show Doctor",link:"#"},{name:"Add Doctor",link:"/admin/addDoctors"},{name:"Set Location and area",link:"#"},{name:"Add/Set Specialization",link:"/addSpecialization"},{name:"Update Location and area",link:"#"}]},
             {name:"Appointment",option:[{name:"Show Appointment",link:"#"},{name:"Cancel Appointment",link:"#"},{name:"Reschedule Appointment",link:"#"}]},
             {name:"Hospital",option:[{name:"Show hospital",link:"#"},{name:"Add hospital",link:"/admin/buildProfile"},{name:"Show hospital Lcation",link:"#"},{name:"Add hospital Area",link:"/upLocation"}]},
             {name:"Notification",option:[{name:"Doctor Notification",link:"#"},{name:"Patient/User Notification",link:"#"},{name:"Send Notification",link:"#"},{name:"Shift Notification",link:"#"},{name:"Leave Notification",link:"#"}]},
@@ -92,7 +92,7 @@ class Dashboard extends Component{
                             ))}
                         </div>
                     </div>
-                    <div className="col-10 px-0 text-dark bg-white">
+                    <div className="col-10 text-dark bg-white">
                         <Switch>
                             <Route path="/admin/educationalDetails" component={EducationalDetails}/>
                             <Route path="/admin/addDoctors" component={AddDoctors}/>

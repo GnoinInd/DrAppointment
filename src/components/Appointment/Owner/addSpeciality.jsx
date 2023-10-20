@@ -14,7 +14,7 @@ class AddSpeciality extends Component{
     render(){
         const {optionArr,selectedOption} = this.state;
         return(
-            <div className="py-2" style={{background:"rgb(230, 230, 230)"}}>
+            <div className="py-2" style={{background:"#ffff"}}>
                 <div className="container vhsda2 py-3">
                     <h4 className="text-center text-primary" >Add Speciality</h4>
                     <div className="d-flex py-4" > 
@@ -39,7 +39,7 @@ class AddSpeciality extends Component{
                        
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Location</label>
-                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                            <select className="form-select jnhSel " name="city" value="" onChange={this.handleChange}>
                                 <option disabled value="" >Choose Location</option>
                             {/* {cities.map((s1,index)=>(
                                 <option key={index}>{s1.name}</option>
@@ -48,7 +48,7 @@ class AddSpeciality extends Component{
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Area</label>
-                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                            <select className="form-select jnhSel " name="city" value="" onChange={this.handleChange}>
                                 <option disabled value="" >Choose Area</option>
                             {/* {cities.map((s1,index)=>(
                                 <option key={index}>{s1.name}</option>
@@ -57,7 +57,7 @@ class AddSpeciality extends Component{
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Hospital Name</label>
-                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                            <select className="form-select jnhSel " name="city" value="" onChange={this.handleChange}>
                                 <option disabled value="" >Choose Hospital Name</option>
                             {/* {cities.map((s1,index)=>(
                                 <option key={index}>{s1.name}</option>
@@ -68,7 +68,7 @@ class AddSpeciality extends Component{
                     <div className="row kjhds3">
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Speciality</label>
-                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                            <select className="form-select jnhSel " name="city" value="" onChange={this.handleChange}>
                                 <option disabled value="" >Choose Area</option>
                             {/* {cities.map((s1,index)=>(
                                 <option key={index}>{s1.name}</option>

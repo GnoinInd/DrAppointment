@@ -7,12 +7,11 @@ class AddHospital extends Component{
 
     render(){
         return(
-            <div className="py-2" style={{background:"rgb(230, 230, 230)"}}>
+            <div className="py-2" style={{background:"#ffff"}}>
 
                 <div className="container vhsda2 py-2">
-                    <h4 className="text-center text-primary" >Build Your Hospital Details</h4>
+                    <h5 className="text-center text-primary" >Build Your Hospital Details</h5>
                     <div className="d-flex py-4"> 
-                        
                         <div className="arrowc4">
                             <div className="lineW3 lineQ1"></div>
                             <div className="cdsWq3 khcdx1">Build Profile</div>
@@ -32,54 +31,48 @@ class AddHospital extends Component{
                     <div className="row pt-5">
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Hospital Type</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Traded As</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Isln</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
-                    </div>
-                    <div className="row kjhds3">
-                    <div className="form-group col-lg-4 col-md-6 col-12">
+                        <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Industry</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Founded</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Operating_income</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
-                    </div>
-                    <div className="row kjhds3">
-                    <div className="form-group col-lg-4 col-md-6 col-12">
+                        <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Founders</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Headquarters</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Area Served</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         
-                    </div>
-                    <div className="row kjhds3">
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Revenue</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Website</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         
                     </div>

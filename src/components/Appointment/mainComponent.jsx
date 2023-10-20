@@ -81,10 +81,10 @@ class MainComponent extends Component{
                     {/* Owner */}
                     <Route path="/owner" component={Owner}/>
                     <Route path="/owner/buildProfile" render={() => <Owner><BuildProfile/></Owner>}/>
-                    <Route path="/mobileVry" render={() => <Owner><MobileOtp/></Owner>}/>
-                    <Route path="/mobileGmailVry" render={() => <Owner><MobileGmailVry/></Owner>}/>
-                    <Route path="/addHospital" render={() => <Owner><AddHospital/></Owner>}/>
-                    <Route path="/addSpeciality" render={() => <Owner><AddSpeciality/></Owner>}/>
+                    {/* <Route path="/mobileVry" render={() => <Owner><MobileOtp/></Owner>}/> */}
+                    {/* <Route path="/mobileGmailVry" render={() => <Owner><MobileGmailVry/></Owner>}/> */}
+                    {/* <Route path="/addHospital" render={() => <Owner><AddHospital/></Owner>}/> */}
+                    {/* <Route path="/addSpeciality" render={() => <Owner><AddSpeciality/></Owner>}/> */}
 
                     <Route path="/owner/addDoctors" render={() => <Owner><AddDoctors/></Owner>}/>
                     <Route path="/mobileEmail" render={() => <Owner><MobileEmail/></Owner>}/>

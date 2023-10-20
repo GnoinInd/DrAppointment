@@ -8,7 +8,7 @@ class BuildProfile extends Component{
 
     render(){
         return(
-            <div className="py-3" style={{background:"#f2f3f3"}}>
+            <div className="py-3" style={{background:"#ffff"}}>
                 <div className="container vhsda2 py-3">
                     <h4 className="fw-bold" >Basic Details</h4>
                     

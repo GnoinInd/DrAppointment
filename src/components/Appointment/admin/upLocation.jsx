@@ -14,7 +14,7 @@ class UpdateLocation extends Component{
     }
     render(){
         return(
-            <div style={{background:"rgb(230, 230, 230)"}}>
+            <div style={{background:"#ffff"}}>
 
                 <div className="container vhsda2 py-2">
                 <h5 className="fw-bold text-center" >Update Location</h5>
@@ -39,7 +39,7 @@ class UpdateLocation extends Component{
                     <div className="row mt-4">
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Hospital Name</label>
-                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                            <select className="form-select jnhSel" name="city" value="" onChange={this.handleChange}>
                                 <option disabled value="" >Choose Hospital Name</option>
                             {/* {cities.map((s1,index)=>(
                                 <option key={index}>{s1.name}</option>
@@ -48,7 +48,7 @@ class UpdateLocation extends Component{
                         </div>
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Designation</label>
-                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                            <select className="form-select jnhSel " name="city" value="" onChange={this.handleChange}>
                                 <option disabled value="" >Choose Designation</option>
                             {/* {cities.map((s1,index)=>(
                                 <option key={index}>{s1.name}</option>
@@ -57,11 +57,11 @@ class UpdateLocation extends Component{
                         </div>
                         <div className="form-group col-lg-2 col-md-4 col-8">
                             <label>Id</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                         <div className="form-group col-lg-3 col-md-6 col-12">
                             <label>Current Location</label>
-                            <input type="text" className="form-control" name="" value="" placeholder="" onChange={this.handleChange} />
+                            <input type="text" className="form-control jnhXd4" name="" value="" placeholder="" onChange={this.handleChange} />
                         </div>
                     </div>
                     <hr/>
@@ -70,7 +70,7 @@ class UpdateLocation extends Component{
                     <h6 className="fw-bold mb-4">Update New Location</h6>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Location</label>
-                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                            <select className="form-select jnhSel " name="city" value="" onChange={this.handleChange}>
                                 <option disabled value="" >Choose Location</option>
                             {/* {cities.map((s1,index)=>(
                                 <option key={index}>{s1.name}</option>
@@ -79,7 +79,7 @@ class UpdateLocation extends Component{
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>City</label>
-                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                            <select className="form-select jnhSel " name="city" value="" onChange={this.handleChange}>
                                 <option disabled value="" >Choose City</option>
                             {/* {cities.map((s1,index)=>(
                                 <option key={index}>{s1.name}</option>
@@ -88,7 +88,7 @@ class UpdateLocation extends Component{
                         </div>
                         <div className="form-group col-lg-4 col-md-6 col-12">
                             <label>Area</label>
-                            <select className="form-select " name="city" value="" onChange={this.handleChange}>
+                            <select className="form-select jnhSel " name="city" value="" onChange={this.handleChange}>
                                 <option disabled value="" >Choose Area</option>
                             {/* {cities.map((s1,index)=>(
                                 <option key={index}>{s1.name}</option>
