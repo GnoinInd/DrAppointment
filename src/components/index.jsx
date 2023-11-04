@@ -44,7 +44,6 @@ class index extends Component{
         else
         s1.scroll = false;
         this.setState(s1);
-        
       }
     handleView=(no)=>{
         let s1 = {...this.state};

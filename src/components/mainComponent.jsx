@@ -16,7 +16,6 @@ class MainComponent extends Component{
                     <Route path="/home" component={Index}/>
                     <Redirect from="/" to="/home"/>
                 </Switch>
-
                 
             </div>
         );

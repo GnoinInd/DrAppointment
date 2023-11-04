@@ -24,7 +24,6 @@ class MatrimonialFilter extends Component{
                     </div>
                 </li>
             </React.Fragment>
-              
         );
     }
 
