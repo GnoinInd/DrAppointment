@@ -3,11 +3,8 @@ import {Switch, Route, Redirect } from "react-router-dom";
 import {Link} from "react-router-dom";
 
 class Membership extends Component{
-    state={
-        
-    }
+    state={ }
     render(){
-        // const {name,index} = this.props;
         return(
             <React.Fragment >
                 <div className="free-Membership">

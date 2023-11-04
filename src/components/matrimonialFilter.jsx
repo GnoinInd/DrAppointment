@@ -3,9 +3,7 @@ import {Switch, Route, Redirect } from "react-router-dom";
 import {Link} from "react-router-dom";
 
 class MatrimonialFilter extends Component{
-    state={
-        
-    }
+    state={      }
     render(){
         const {name,index} = this.props;
         return(

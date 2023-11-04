@@ -11,11 +11,8 @@ class MainComponent extends Component{
     render(){
         return(
             
-
             <div>
                 <Switch>
-
-
                     <Route path="/home" component={Index}/>
                     <Redirect from="/" to="/home"/>
                 </Switch>
