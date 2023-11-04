@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+
 html, body, ul, form, button, input, p {
     margin: 0;
     padding: 0;
@@ -51,7 +53,6 @@ a:hover{
     height: 63px;
     color: #fff;
     float: left;
-    border-radius: 2px;
 }
 .menu-list{
     float: left;
@@ -63,6 +64,7 @@ a:hover{
     outline: none;
 }
 .menu-navbar--second{
+    position: relative;
     width:319px;
     background: rgba(52, 73, 94, 0.95);
     font-size: 14px;
@@ -82,6 +84,12 @@ a:hover{
     position:absolute;
     right: -160px;
     top: 0px;
+    transition: 0.3s all;
+    
+   
+}
+.srolled{
+    right: 0!important;
 }
 .loginPart{
     cursor: pointer;
@@ -118,16 +126,26 @@ a:hover{
     position: absolute;
     top: 38px;
     left: -24px;
-    /* display: none; */
+    display: none;
     overflow: hidden;
     height: 335px;
     z-index: 3;
     background: rgba(52, 73, 94, 0.95);
     color: #fff;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: bottom 0.5s ease;
 }
-
-.browse-Menu{
+.browse-menu{
+    cursor: pointer;
+}
+.browse-menu:hover + .contentHome{
+    display: block;
+    z-index: 9;
+}
+.contentHome:hover{
+    display: block;
+}
+.browse-link-list {
     height: 100%;
     width: 29%;
     padding-top: 0.1em;
@@ -139,7 +157,7 @@ a:hover{
     color: #fff;
     float: left;
 }
-.browse-Menu a{
+.browse-link-list div{
     padding: 10px 0 10px 16px;
     font-size: 16px;
     display: block;
@@ -147,7 +165,7 @@ a:hover{
     font-size: 14px;
     text-transform: uppercase;
 }
-.browse-Menu a:hover{
+.browse-link-list div:hover{
     background: #d9475c url(https://static.jeevansathi.com/images/jspc/commonimg/topnav-arwright.png) no-repeat 170px 16px;
 }
 .browseContent{
@@ -155,8 +173,984 @@ a:hover{
     float: right;
 }
 .list-element{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     padding: 10px 10px 10px 12px;
 }
 .list-element:hover{
     background: #d9475c;
+}
+.search-menu{
+    cursor: pointer;
+    padding-bottom: 18px;
+}
+.search-list{
+    position: absolute;
+    width: 246px;
+    margin-right: 10px;
+    display: none;
+    left:-16px;
+    background: rgba(52, 73, 94, 0.97);
+}
+.search-list div{
+    padding: 10px 10px 10px 16px;
+
+}
+.search-list div:hover{
+    background-color: #d9475c;
+}
+.search-list:hover{
+    display: block;
+}
+.search-menu:hover + .search-list{
+    display: block;
+}
+
+
+.looking-Container{
+    padding: 54px 0px 25px;
+    color: #fff;
+    width: 990px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.looking-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.nowChatForFree{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.03em;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+.isLooking{
+    font-size: 20px;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 75%);
+    margin-top: 6px
+}
+.registerFields{
+    width: 370px;
+    background: rgba(0,0,0,0.55);
+}
+.registerFields label{
+    font-size: 12px;
+    color: #FFF;
+    letter-spacing: 0;
+    padding-top: 13px;
+    margin-bottom: 0;
+}
+.registerFields input, select{
+    width: 338px;
+    height: 35px;
+    background-color: #FFF;
+    color: #14202B;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    padding-left: 12px;
+    outline: none;
+}
+.countryCode select{
+    width: 90px;
+    border-right: 1px solid rgb(197, 195, 195);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.mobileText{
+    width: 248px!important;
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+}
+.register_Button{
+    width: 338px;
+    margin-top: 13px;
+    padding: 6px;
+    font-size: 14px;
+    color: #FFF;
+    letter-spacing: 0;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    background: #D9475C;
+}
+.register_Button:hover{
+    background: #EA556B;
+}
+.register_Tmc{
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFF;
+    letter-spacing: 0;
+    padding-top: 13px;
+}
+.register_Tmc span{
+ color: #d9475c;
+ cursor: pointer;
+}
+
+/* main-benifit  */
+
+
+.homeContainer{
+    width: 990px;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px 0 rgba(142, 142, 142, 0.2);
+    margin-bottom: 48px;
+}
+.main-benifit{
+    background-color: #fff;
+    padding: 28px 74px 48px 74px;
+    margin: 20px 0;
+}
+.moreThan{
+    letter-spacing: 1.75px;
+    color: #8A9DB0;
+    font-size: 14px;
+    font-weight: 700;
+}
+.bringingPeople{
+    color: #000;
+    font-size: 28px;
+    font-weight: 400;
+}
+.main-benifit span{
+    color: #d9475c;
+}
+.infoImg{
+    height: 53px;
+    width: 60px;
+    background-position: -23px -10px;
+    background-image: url("https://static.jeevansathi.com/images/jspc/myjsImg/Top_new_Benefits.png");
+    background-repeat: no-repeat;
+}
+.infoImg2{
+    height: 53px;
+    width: 60px;
+    background-position: -206px -10px;
+    background-image: url("https://static.jeevansathi.com/images/jspc/myjsImg/Top_new_Benefits.png");
+    background-repeat: no-repeat;
+}
+.infoImg3{
+    height: 53px;
+    width: 60px;
+    background-position: -121px -10px;
+    background-image: url("https://static.jeevansathi.com/images/jspc/myjsImg/Top_new_Benefits.png");
+    background-repeat: no-repeat;
+}
+.underline{
+    height: 2px;
+    width: 39px;
+    margin: 8px 0 5px 0;
+    background-color: #d9475c;
+
+}
+.textmore{
+    line-height: 19px;
+    color: #33495F;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* FeaturesSection */
+
+.featuresSection{
+    position: relative;
+    background-color: #f8f9f9;
+    padding: 0 4rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    
+}
+.featuresSection_body{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 310px;
+    flex: none;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+.featuresSection__Header{
+    width: 990px;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    margin: 0 -4rem;
+    padding-left: 4rem;
+    background: #f8f9f9;
+    background: linear-gradient(to top, #f8f9f900, #f8f9f9 2rem);
+}
+.FeaturesSection__SubTitle{
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.1em;
+    margin: 0;
+    margin-bottom: 0.25rem;
+    color: #8A9DB0;
+}
+.featuresSection__Title{
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.featuresSection__Title span{
+    color: #D9475C;
+}
+.featuresSection-List{
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.featuresSection-List a{
+    display: inline-block;
+    color: inherit;
+    opacity: 0.5;
+    margin-bottom: 3.5rem
+}
+
+.featuresSection-List .underline3{
+    height: 2px;
+    width: 39px;
+    margin: 8px 0 5px 0;
+    background-color: #33495F;
+} 
+.featuresSection-List h3{
+    position: relative;
+    line-height: 1.21;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
+    margin-top: 0;
+    color: #14202B;
+}
+.featuresSection-List h3::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #14202B;
+    width: 3rem;
+    height: 2px;
+}
+.featuresSection-List h3::after:hover{
+    background-color: #d9475c;
+}
+.featuresSection-List p{
+    font-size: .875rem;
+    line-height: 1.21;
+    margin: 0;
+    color: #33495F;
+}
+.featuresSection-List a:hover{
+    opacity: 1;
+}
+
+.featuresSection-Images{
+    flex: 1 0 0;
+    position: relative;
+    overflow: hidden;
+}
+.featuresSection--Images--Wrapper:first-child {
+    margin-top: 0;
+}
+.featuresSection--Images--Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 380px;
+    margin-left: auto;
+    padding: 12rem 0 4rem 0;
+    margin-top: -35vh;
+}
+
+.featuresSection--Images--Wrapper--img{
+    display: block;
+    height: 50vh;
+    max-height: 420px;
+    min-height: 370px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.findWorkImg{
+    height: 100px;
+    width: 197px;
+    background-image: url("https://static.jeevansathi.com/images/jspc/myjsImg/How_it_works.svg");
+    background-repeat: no-repeat;
+}
+
+.img-postion{
+    background-position: -14px -10px;    
+}
+.img-postion2{
+    background-position: -233px -10px;    
+}
+.img-postion3{
+    background-position: -449px -10px;    
+}
+.findWorkTxt{
+    /* width: 197px; */
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.findBottom{
+    background: #D9475C;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    width: 150px;
+
+}
+
+.membershipPlans{
+    padding: 28px 74px 48px 74px;
+    background-color: #f8f9f9;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: -230px;
+}
+.membership-Title{
+    font-size: 28px;
+    font-weight: 600;   
+}
+.membership-Title span{
+    color: #D9475C;
+}
+.membership-Txt{
+    font-size: 16px;
+    color: #4C6176;
+    padding: 10px 0 30px 0;
+}
+.membership{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.free-Membership{
+    height: 420px;
+    width: 340px;
+    margin-top: 40px;
+    box-shadow: 0 2px 6px -1px rgba(38,48,140,0.20);
+    padding: 24px 5px 24px 24px;
+    text-align: left;
+    z-index: 2;
+    border-radius: 4px;
+    background-color: #ffff;
+}
+.microLine{
+    height: 3.2px;
+    width: 33.6px;
+    background-color: #d9475c;
+}
+
+.materialIcons{
+    width: 24px;
+    height: 24px;
+    background-image: url(https://static.jeevansathi.com/images/jspc/commonimg/Material_Icons_Sprites_final.svg);
+    background-repeat: no-repeat;
+}
+.pinktick{
+    background-position: -271px -38px;
+}
+.pinktick2{
+    background-position: -288px -134px; 
+    
+}
+.colorGray{
+    color: #8A9DB0;
+}
+.freeRegister{
+    height: 35px;
+    display: flex;
+    background: #D9475C;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.paid-Membership{
+    width: 350px;
+    background-color: #d9475c;
+    border-radius: 4px;
+    color: #ffff;
+    text-align: left;
+    /* margin-top: -40px; */
+    padding: 32px 0px 32px 32px;
+    box-shadow: 0 2px 6px 0 rgba(38, 48, 140, 0.2);
+
+}
+.microLine2{
+    height: 3.2px;
+    width: 34px;
+    background-color: #fff;
+}
+.paid-Membership--Title{
+    padding-bottom: 21px;
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 16px;
+    color: #fff;
+}
+.pinktick3{
+    background-position: -85px -37px; 
+    
+}
+.paidRegister{
+    width: 90%;
+    height: 35px;
+    display: flex;
+    background: #fff;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    color: #D9475C;
+    margin-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.bgBlue{
+    height: 232px;
+    background-color: #34495e;
+    /* margin-top: -240px; */
+}
+
+.exclusivePad{
+    padding: 32px 60px 45px 74px;
+    background-color: #fff;
+}
+.exclusiveImage{
+    width: 851px;
+    height: 490px;
+    background: #FBFBFB;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    border-radius: 12px;
+    background-image: url("https://www.jeevansathi.com/images/jspc/commonimg/JS_Exclusive_Image_final_min.png");
+    
+}
+.exclusiveBtn{
+    padding: 4px 16px;
+    color: #fff;
+    background-color: #d9475c;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.disp-flex{
+    display: flex;
+    padding-top: 28px;
+}
+.pickPeople{
+    background-position: -45px -135px;
+}
+
+.divideSize{
+    width: 0px;
+    height: 75px;
+    border: 1px solid #DFE6ED;
+    margin: 0px 10px 0px 6px;
+}
+.exclusiveMeet{
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 8px;
+}
+.txtMore{
+    font-size: 13px;
+    line-height: 19px;
+    color: #33495F;
+
+}
+.pickTune{
+    background-position: -136px -135px;
+}
+.pickprofile{
+    background-position: -89px -135px;
+}
+.successStory{
+    padding: 30px 50px 45px 74px;
+    background-color: #f8f9f9;
+
+}
+.storyMatched{
+    width: 866px;
+}
+
+/* slide------- */
+.storySlick{
+    position: relative;
+    padding-top: 20px;
+}
+.storySlick .slick-prev {
+    width: 40px!important;
+    height: 40px!important;
+    left: -20px !important;
+    border-radius: 50%;
+    box-shadow: 0 12px 18px 0 rgba(38,48,140,0.20);
+    background-color: #ffff!important;
+    color: #000000;
+    z-index: 9;
+    background-image: url("https://static.jeevansathi.com/images/jspc/commonimg/Material_Icons_Sprites_final.svg")!important;
+    background-repeat: no-repeat!important;
+    background-position: -24px -80px!important;
+}
+.storySlick .slick-next{
+    width: 40px!important;
+    height: 40px!important;
+    right: -20px!important;
+    border-radius: 50%;
+    box-shadow: 0 12px 18px 0 rgba(38,48,140,0.20);
+    background-color: #ffff!important;
+    background-image: url("https://static.jeevansathi.com/images/jspc/commonimg/Material_Icons_Sprites_final.svg")!important;
+    background-repeat: no-repeat!important;
+    background-position: -190px -80px!important;
+  }
+  .slick-next:before,
+  .slick-prev:before {
+    content: "" !important;
+    background-color: #000;
+  }
+  .next-slick-arrow,
+  .prev-slick-arrow {
+    color: #000000;
+    font-size: 45px;
+  }
+
+.storySlick .slick-current{
+    width: 289px!important;
+    max-height: 230px;
+    min-height: 1px;
+}
+.slick-cloned{
+    width: 100%;
+    display: inline-block;
+    height: 228.9px;
+}
+.storyList{
+    position: relative;
+    margin-right: 10px;
+    height: 100%!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: center top;
+    border-radius: 7px;
+}
+.pos_abs{
+    width: 100%;
+    position: absolute;
+    padding-top: 10px;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+}
+.story-Name{
+    text-shadow: 0 1px 1px rgba(0,0,0,0.27);
+    font-size: 40px;    
+    font-family: 'Aguafina Script', cursive;
+}
+.lineClass{
+    border: 1px solid white;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -5px;
+}
+.marriageDate{
+    letter-spacing: 1.15px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.24);
+    font-size: 11px;
+    font-weight: 600;
+    padding-top: 7px;
+    padding-bottom: 20px;
+}
+.storyDetails{
+    position: relative;
+    height: 228.2px;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #F0455E;
+    border-radius: 7px;
+    color: #fff;
+    padding: 24px;
+    transition: 2s all;
+}
+
+.storyDesc{
+    height: 98px;
+    padding-top: 8px;
+    overflow: hidden;
+}
+.storyList:hover .storyDetails{
+    visibility:visible;
+    opacity: 1;
+}
+.viewMore{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+}
+.iconView{
+    background-position: -340px -38px
+}
+
+
+
+.connectApp{
+    height: 390px;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #34495e;
+    display: flex;
+}
+.connectApp-Txt{
+    width: 45%;
+    padding: 28px 0 0 55px;
+    float: left;
+}
+
+.appsImg{
+    height: 48px;
+    width: 145px;
+    background-image: url("https://static.jeevansathi.com/images/jspc/myjsImg/store_icons_sprite.png");
+    background-repeat: no-repeat;
+}
+.app{
+    background-position: 0px 0px
+}
+.appsImg2{
+    height: 52px;
+    width: 164px;
+    background-image: url("https://static.jeevansathi.com/images/jspc/myjsImg/store_icons_sprite.png");
+    background-repeat: no-repeat;
+}
+.app2{
+    background-position: -174px 0px
+}
+.connectApp-Img{
+    position: relative;
+    width: 52%;
+    padding-top: 20px;
+}
+.connectApp-Img img{
+    position: absolute;
+    width: 463px;
+    height: 372px;
+    object-fit: contain;
+}
+.matrimonialContainer{
+    padding-top: 40px;
+    background-color: #fff;
+    text-align: center;
+
+}
+.matrimonial-Browse{
+    list-style-type: none;
+    padding-top: 8px;
+    display: inline-block;
+}
+.bgLight{
+    background-color: #e5e5e5;
+}
+.matrimonial-Browse li{
+    float: left;
+    padding: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.matrimonial-Browse .active{
+    background-color: #e5e5e5;
+}
+.matrimonial-List{
+    margin: 0px;
+    display: inline-block;
+}
+.matrimonial-List li{
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+    line-height: 24px;
+    padding: 5px 6px;
+    font-size: 13px;
+}
+.matrimonial-List li a{
+    color: #9c9a9a;
+    cursor: pointer;
+}
+.matrimonial-List li a:hover{
+    color: #000;
+}
+.sub-h{
+    color: #9c9a9a;
+}
+.subhobver{
+    visibility: hidden;
+}
+.subhobver-pos{
+    position: absolute;
+    left: -76.75px;
+    z-index: 2;
+}
+.hobverbg{
+    position: relative;
+    background-color: #232832;
+    padding: 5px;
+    white-space: nowrap;
+}
+.lineHeight{
+    height: 3px;
+}
+.materLink{
+    padding: 5px;
+    font-size: 13px;
+    color: #FFF !important;
+    opacity: 0.7;
+    font-weight: 500;
+}
+.materLink:hover{
+    opacity: 1;
+}
+.UpArrow{
+    width: 24px;
+    height: 24px;
+    margin-top: -11px;
+    margin-left: 13px;
+    float: left;
+    background-position: -151px -87px;
+}
+li:hover .subhobver{
+    visibility: visible;
+}
+
+.seoText{
+    padding: 35px 35px 40px 35px;
+    background-color: #f8f9f9;
+    text-align: justify;
+}
+.seoText img {
+    height: 46px;
+}
+.seoText-Desc{
+    color: #14202B;
+    line-height: 24px;
+    font-size: 14px;
+    opacity: 0.8;
+    padding-top: 18px;
+}
+.seoText-Note{
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.8;
+    padding-top: 20px;
+}
+
+.footer-container{
+    background-color: #34495e;
+    padding-bottom: 30px;
+}
+.footer-List{
+    width: 990px;
+    margin: 0 auto;
+    padding: 0;
+}
+.footerWid{
+    width: 265px;
+}
+.footerWid li{
+    opacity: 0.7;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+}
+.footerWid-Title{
+    color: #fff;
+    line-height: 25px;
+    opacity: 1!important;
+    font-size: 16px;
+}
+.AppFollow{
+    background-color: #2E4154;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+}
+.AppFollow-List{
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+
+}
+.footerIcon{
+    background-image: url("https://static.jeevansathi.com/images/jspc/commonimg/FooterIconsSpriteNew.svg");
+    background-repeat: no-repeat;
+}
+.iconPostion{
+    background-position: -65px 0px;
+    padding: 0px 10px;
+}
+.iconPostion2{
+    background-position: -37px 0px;
+    padding: 0px 10px;
+}
+.iconPostion3{
+    background-position: -89px 0px;
+    padding: 0px 10px;
+}
+.iconPostion4{
+    background-position: -140px 0px;
+    padding: 0px 10px;
+}
+.iconPostion5{
+    background-position: -112px 0px;
+    padding: 0px 10px;
+}
+
+.copyRight{
+    background-color: #e1e4e7;
+    font-size: 12px;
+    color: #666;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+}
+.partnerList{
+    padding: 10px 0 10px 128px;
+    text-align: center;
+    display: flex;
+}
+.partnerSite{
+    font-size: 12px;
+    font-weight: 600;
+    color: #a9a9a9;
+    padding: 30px 36px 0 0;
+    /* float: left; */
+}
+.footerContainer{
+    width: 600px;
+    height: 80px;
+    /* float: left; */
+}
+.partnerName{
+    /* float: left; */
+    /* display: flex!important; */
+    /* width: 548px;
+    height: 80px; */
+    margin: 10px 27px;
+}
+.partnerName div{
+    float: left;
+    padding-left: 40px;
+}
+.headfoots{
+    background-image: url("https://static.jeevansathi.com/images/jspc/commonimg/header-footer3.png");
+    background-repeat: no-repeat;
+    height: 44px;
+}
+.acre{
+    background-position: 1px 1px;
+    width: 72px!important;
+    /* padding: 0 10px!important; */
+}
+.nc{
+    background-position: 1px -86px;
+    width: 114px!important;
+}
+.ng{
+    background-position: 1px -46px;
+    width: 148px!important;
+}
+.shiksha{
+    background-position: -64px -123px;
+    width: 85px!important;
+}
+.mydala{
+    background-position: -83px 1px;
+    width: 101px!important;
+}
+.pb{
+    background-position: -123px -89px;
+    width: 91px!important;
+}
+.zomato{
+    background-position: -7px -124px;
+    width: 49px!important;
+}
+.meritn{
+    background-position: 1px -163px;
+    width: 163px!important;
+}
+.ambitionbox{
+    background-position: -272px 6px;
+    width: 130px!important;
+    height: 28px;
+    margin-top: 10px
+}
+
+.footerContainer .slick-prev {
+    width: 11px!important;
+    height: 23px!important;
+    color: #000000;
+    left: -30px;
+    top:25px;
+    z-index: 9;
+    background-image: url("https://static.jeevansathi.com/images/jspc/commonimg/header-footer3.png")!important;
+    background-repeat: no-repeat!important;
+    background-position: -193px 1px!important;
+}
+.footerContainer .slick-next{
+    width: 11px!important;
+    height: 23px!important;
+    right: -20px!important;
+    top:25px;
+    background-image: url("https://static.jeevansathi.com/images/jspc/commonimg/header-footer3.png")!important;
+    background-repeat: no-repeat!important;
+    background-position: -210px 1px!important;
+  }
+  .slick-next:before,
+  .slick-prev:before {
+    content: "" !important;
+    background-color: #000;
+  }
+  .next-slick-arrow,
+  .prev-slick-arrow {
+    color: #000000;
+    font-size: 45px;
+  }
+
+.footerContainer .slick-current{
+    width: 130px!important;
+}
+.footerContainer .slick-slider{
+    margin-top: 15px;
+    margin-left: 34px;
+    width: 508px;
+    height: 80px;
 }
